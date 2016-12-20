@@ -13,21 +13,18 @@ h3 {
   color: #000;
 }
 
-nav {
-  background: #F0ECDD !important;
+nav.nav {
+  background: #f9f9f9;
+  box-shadow: 1px 3px 27px 0px #ddd;
 }
-nav .container {
-  border-bottom: 1px solid #DADAD8 !important;
-}
-nav .navbar-nav {
+nav.nav .navbar-nav>li>a,
+nav.nav .navbar-brand {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
   font-weight: bold;
 }
-.navbar-brand,
-.participants,
-.winners {
-  color: #000 !important;
-  font-weight: 900;
+nav.nav.navbar-default {
+  border: none;
 }
 .btn-website {
   background: #D9CA95;
@@ -174,7 +171,9 @@ a.post-author {
 }
 
 @media (max-width: 768px) {
-
+  nav.nav .navbar-brand {
+    font-size: 15px;
+  }
   .article-header,
   h1 {
     font-size: 25px;
@@ -191,6 +190,13 @@ a.post-author {
   }
   .article-links-btns {
     margin-top: 20px;
+  }
+  .article-links-info,
+  .article-links-btns {
+    display: flex;
+  }
+  .article-links-info-author {
+    padding-right: 0;
   }
   .article blockquote {
     font-size: 16px;
@@ -212,6 +218,9 @@ a.post-author {
 
 }
 @media (min-width: 768px) {
+  nav.nav .navbar-brand {
+    font-size: 15px;
+  }
   .btn-website {
     padding: 10px 10px !important;
     margin: 7px auto;
@@ -226,6 +235,9 @@ a.post-author {
 }
 
 @media (min-width: 992px) {
+  nav.nav .navbar-brand {
+    font-size: 18px;
+  }
   nav {
     margin-bottom: 60px !important;
   }
@@ -282,10 +294,10 @@ a.post-author {
     top: 50%;
   }
   .article-time::before {
-    left: 100px;
+    left: 130%;
   }
   .article-time::after {
-    right: 100px;
+    right: 130%;
   }
 
 }
