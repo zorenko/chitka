@@ -170,6 +170,106 @@ a.post-author {
   border: none;
 }
 
+
+.rating-page .subheader {
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+.rating-page .subheader-title {
+  padding-bottom: 40px;
+}
+
+.rating-page .subheader-text {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.rating-page a.btn-cta {
+  color: #fff;
+  background: #A59149;
+  padding: 10px 30px;
+  border: none;
+  max-width: 230px;
+}
+.rating-page a.btn-cta:hover,
+.rating-page a.btn-cta:active,
+.rating-page a.btn-cta:focus {
+  color: #fff;
+  background: #8e7a32;
+}
+
+.rating-page .top {
+  margin-bottom: 100px;
+}
+
+.top-profile {
+  margin-bottom: 60px;
+}
+.top-stats {
+  color: #A59149;
+}
+
+.top-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "PT Serif", serif;
+}
+.top-about {
+  margin-bottom: 20px;
+}
+
+.winner {
+  width: 445px;
+}
+.winner-photo {
+  position: relative;
+  display: block;
+  height: 192px;
+  margin-bottom: 30px;
+}
+.winner-photo .top3-photo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -91px;
+  margin-top: 5px;
+  width: 182px;
+  height: 182px;
+}
+.winner-icon {
+  content: "";
+  display: block;
+  width: 232px;
+  height: 192px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -116px;
+  background: url(../uploads/img/winner.png);
+  z-index: 100;
+}
+
+.winner-name {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.winner-about {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.winner-stats {
+  font-size: 18px;
+}
+
+
+
 @media (max-width: 768px) {
   nav.nav .navbar-brand {
     font-size: 15px;
