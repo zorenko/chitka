@@ -84,12 +84,14 @@ a.feed-nav-btn.active {
 }
 
 a.post-more,
-a.post-author {
+a.post-author,
+a.post-book {
   color: #AD9A58;
 }
 
-.post-author {
-  font-size: 16px;
+.post-author,
+.post-book {
+  font-size: 15px;
 }
 
 .post-content {
@@ -409,26 +411,6 @@ a.post-author {
   }
   .article blockquote {
     margin-bottom: 55px;
-  }
-
-  .article-time {
-    position: relative;
-  }
-  .article-time::before,
-  .article-time::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 115px;
-    height: 1px;
-    background: #E9E1C7;
-    top: 50%;
-  }
-  .article-time::before {
-    left: 130%;
-  }
-  .article-time::after {
-    right: 130%;
   }
 
 }
