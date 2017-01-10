@@ -111,8 +111,10 @@ a.post-author {
 
 
 
-.article-page {
+.article-page,
+.rating-page {
   background: #F9F9F9;
+  padding-bottom: 100px;
 }
 
 .article-page nav {
@@ -266,6 +268,35 @@ a.post-author {
 
 .winner-stats {
   font-size: 18px;
+}
+
+.rating-page .list-titles {
+  color: #9B9B9B;
+  margin-bottom: 20px;
+}
+
+.rating-page .participant {
+  margin-bottom: 30px;
+}
+
+.rating-page .participant-name {
+  color: #A59149;
+  font-size: 16px;
+}
+
+.rating-page .participant-photo {
+  margin-top: 9px;
+}
+
+.rating-page .middle {
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.rating-page .btn-blog {
+  background: #47A8E6;
+  color: #fff;
+  margin-top: 32px;
 }
 
 
