@@ -186,10 +186,6 @@ a.post-book {
 }
 
 
-.rating-page .subheader {
-  margin-top: 100px;
-  margin-bottom: 130px;
-}
 .rating-page .subheader-title {
   padding-bottom: 40px;
 }
@@ -213,18 +209,12 @@ a.post-book {
   background: #8e7a32;
 }
 
-
-
 .top-profile {
   margin-bottom: 60px;
 }
 .top-stats {
   color: #A59149;
 }
-
-
-
-
 
 .rating-page .list-titles {
   display: none;
@@ -233,7 +223,10 @@ a.post-book {
   background: #47A8E6;
   color: #fff;
 }
-
+.participant-name.top-name {
+  font-weight: 600;
+  font-family: "PT Serif", serif;
+}
 
 
 @media (max-width: 768px) {
@@ -287,6 +280,10 @@ a.post-book {
   .profile {
     margin-bottom: 40px;
   }
+  .rating-page .subheader {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
   .participant {
     text-align: center;
     border-bottom: 1px solid #E7E7E7;
@@ -317,6 +314,13 @@ a.post-book {
   }
   .btn-blog {
     display: none;
+  }
+  .winner-icon {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    z-index: 100;
   }
 }
 
@@ -352,8 +356,12 @@ a.post-book {
   .article-header-btns .block {
     margin-top: 50px;
   }
+  .rating-page .subheader {
+    margin-top: 100px;
+    margin-bottom: 130px;
+  }
   .rating-page .participant {
-    margin-bottom: 30px;
+    margin-bottom: 55px;
   }
   .rating-page .participant-name {
     color: #A59149;
@@ -370,7 +378,7 @@ a.post-book {
     margin-top: 32px;
   }
   .rating-page .top {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
   .winner {
     width: 445px;
@@ -394,19 +402,13 @@ a.post-book {
   .winner-icon {
     content: "";
     display: block;
-    width: 232px;
-    height: 192px;
     position: absolute;
-    top: 0;
     left: 50%;
     margin-left: -116px;
-    background: url(../uploads/img/winner.png);
     z-index: 100;
   }
-  .winner-name {
+  .participant-name.top-name.winner-name {
     font-size: 30px;
-    font-weight: 600;
-    color: black;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -426,9 +428,7 @@ a.post-book {
   }
   .participant-name.top-name {
     font-size: 18px;
-    font-weight: 600;
     margin-bottom: 20px;
-    font-family: "PT Serif", serif;
     color: #000;
   }
   .top-about {
@@ -439,6 +439,9 @@ a.post-book {
   }
   .stats>div {
     text-align: center;
+  }
+  .top-text {
+    padding-top: 10px;
   }
 }
 
