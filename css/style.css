@@ -213,9 +213,7 @@ a.post-book {
   background: #8e7a32;
 }
 
-.rating-page .top {
-  margin-bottom: 100px;
-}
+
 
 .top-profile {
   margin-bottom: 60px;
@@ -224,92 +222,16 @@ a.post-book {
   color: #A59149;
 }
 
-.top-name {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  font-family: "PT Serif", serif;
-}
-.top-about {
-  margin-bottom: 20px;
-}
 
-.winner {
-  width: 445px;
-}
-.winner-photo {
-  position: relative;
-  display: block;
-  height: 192px;
-  margin-bottom: 30px;
-}
-.winner-photo .top3-photo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -91px;
-  margin-top: 5px;
-  width: 182px;
-  height: 182px;
-}
-.winner-icon {
-  content: "";
-  display: block;
-  width: 232px;
-  height: 192px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -116px;
-  background: url(../uploads/img/winner.png);
-  z-index: 100;
-}
 
-.winner-name {
-  font-size: 30px;
-  font-weight: 600;
-  color: black;
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-.winner-about {
-  text-align: center;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.winner-stats {
-  font-size: 18px;
-}
 
 .rating-page .list-titles {
-  color: #9B9B9B;
-  margin-bottom: 20px;
+  display: none;
 }
-
-.rating-page .participant {
-  margin-bottom: 30px;
-}
-
-.rating-page .participant-name {
-  color: #A59149;
-  font-size: 16px;
-}
-
-.rating-page .participant-photo {
-  margin-top: 9px;
-}
-
-.rating-page .middle {
-  margin-top: 40px;
-  display: inline-block;
-}
-
 .rating-page .btn-blog {
   background: #47A8E6;
   color: #fff;
-  margin-top: 32px;
 }
 
 
@@ -365,6 +287,37 @@ a.post-book {
   .profile {
     margin-bottom: 40px;
   }
+  .participant {
+    text-align: center;
+    border-bottom: 1px solid #E7E7E7;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .participant .stats {
+    font-size: 16px;
+  }
+  .participant .participant-description {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .participant-photo {
+    margin-bottom: 20px;
+  }
+  .participant-name {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .rating-page .btn-blog {
+    margin-top: 20px;
+  }
+  .stats>div {
+    text-align: center;
+    padding: 0;
+  }
+  .btn-blog {
+    display: none;
+  }
 }
 
 @media (min-width: 450px) {
@@ -388,12 +341,104 @@ a.post-book {
   .btn-vk {
     padding: 5px 8px;
   }
-
+  .rating-page .list-titles {
+    display: block;
+    color: #9B9B9B;
+    margin-bottom: 20px;
+  }
   .article-header-btns .block {
     padding: 30px 200px;
   }
   .article-header-btns .block {
     margin-top: 50px;
+  }
+  .rating-page .participant {
+    margin-bottom: 30px;
+  }
+  .rating-page .participant-name {
+    color: #A59149;
+    font-size: 16px;
+  }
+  .rating-page .middle {
+    margin-top: 40px;
+    display: inline-block;
+  }
+  .rating-page .participant-photo {
+    margin-top: 9px;
+  }
+  .rating-page .btn-blog {
+    margin-top: 32px;
+  }
+  .rating-page .top {
+    margin-bottom: 100px;
+  }
+  .winner {
+    width: 445px;
+    margin-bottom: 80px;
+  }
+  .winner-photo {
+    position: relative;
+    display: block;
+    height: 192px;
+    margin-bottom: 30px;
+  }
+  .winner-photo .top3-photo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -91px;
+    margin-top: 5px;
+    width: 182px;
+    height: 182px;
+  }
+  .winner-icon {
+    content: "";
+    display: block;
+    width: 232px;
+    height: 192px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -116px;
+    background: url(../uploads/img/winner.png);
+    z-index: 100;
+  }
+  .winner-name {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .winner-about {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .winner-stats {
+    font-size: 18px;
+  }
+  .stats-text {
+    display: none;
+  }
+  .btn-blog {
+    display: block;
+  }
+  .participant-name.top-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: "PT Serif", serif;
+    color: #000;
+  }
+  .top-about {
+    margin-bottom: 20px;
+  }
+  .top-stats {
+    padding: 0 15px;
+  }
+  .stats>div {
+    text-align: center;
   }
 }
 
@@ -424,7 +469,6 @@ a.post-book {
   .feed-nav {
     margin-bottom: 50px;
   }
-
   .btn-fb,
   .btn-vk {
     padding: 8px 10px;
@@ -442,9 +486,10 @@ a.post-book {
   .article blockquote {
     margin-bottom: 55px;
   }
-
   .article-header-btns .block {
     padding: 30px 260px;
   }
-
+  .winner {
+    margin-bottom: 0;
+  }
 }
