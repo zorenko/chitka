@@ -46,16 +46,19 @@ nav.nav.navbar-default {
 
 
 .feed-amount {
-  font-size: 17px;
+  font-size: 16px;
   color: #787875;
   vertical-align: middle;
-  padding: 5px 10px !important;
+  padding-top: 6px;
 }
 
-a.feed-nav-btn  {
+a.feed-nav-btn {
   color: #484746;
   padding: 5px 10px !important;
   margin: 0 7px;
+}
+a.feed-nav-btn:first-child {
+  margin-left: 0;
 }
 
 a.feed-nav-btn.active {
@@ -351,6 +354,9 @@ a.post-book {
   .feed-nav {
     margin-bottom: 25px;
   }
+  .feed-amount {
+    padding-bottom: 10px;
+  }
   .btn-fb,
   .btn-vk {
     padding: 5px 8px;
@@ -499,5 +505,10 @@ a.post-book {
   }
   .winner {
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .feed-amount {
+    padding-bottom: 0;
   }
 }
