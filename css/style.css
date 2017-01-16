@@ -148,9 +148,13 @@ a.post-book {
 .article-header-btns {
   display: flex;
 }
+.article-header-btns .center-block {
+  text-align: center;
+}
 
 .article-header-btns .block {
-  padding: 30px 20px;
+  padding: 30px 0;
+  width: 100%;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 }
@@ -336,12 +340,6 @@ a.post-book {
   }
 }
 
-@media (min-width: 450px) {
-  .article-header-btns .block {
-    padding: 30px 100px;
-  }
-}
-
 @media (min-width: 768px) {
   nav.nav .navbar-brand {
     font-size: 15px;
@@ -362,9 +360,7 @@ a.post-book {
     color: #9B9B9B;
     margin-bottom: 20px;
   }
-  .article-header-btns .block {
-    padding: 30px 200px;
-  }
+
   .article-header-btns .block {
     margin-top: 50px;
   }
@@ -500,9 +496,6 @@ a.post-book {
   }
   .article blockquote {
     margin-bottom: 55px;
-  }
-  .article-header-btns .block {
-    padding: 30px 260px;
   }
   .winner {
     margin-bottom: 0;
