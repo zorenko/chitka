@@ -79,6 +79,7 @@ a.feed-nav-btn.active {
 
 .post .post-header {
   font-size: 34px;
+  line-height: 43px;
   padding-bottom: 12px;
   color: #ad9a58;
 }
@@ -112,7 +113,8 @@ a.post-book {
 }
 
 .post-links {
-  padding-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .post .post-time {
@@ -143,6 +145,7 @@ a.post-book {
 .article-links {
   margin-bottom: 50px;
 }
+
 .article-links-btn {
   padding: 8px 25px;
   border-radius: 6px;
@@ -172,6 +175,9 @@ a.post-book {
 .previous-article-header {
   margin-bottom: 50px;
 }
+.previous-article .well-lg.post {
+  padding-top: 25px;
+}
 .article-img {
   background: #E6E2D2;
   height: 320px;
@@ -200,6 +206,7 @@ a.post-book {
   background: #F7F5EE;
   color: #000;
   border: none;
+  display: inline-block;
 }
 
 
@@ -290,6 +297,10 @@ a.post-book {
     font-size: 20px;
     line-height: 24px;
   }
+  .post .post-header {
+    font-size: 24px;
+    line-height: 30px;
+  }
   .post-text {
     font-size: 14px;
   }
@@ -298,6 +309,9 @@ a.post-book {
   }
   .profile {
     margin-bottom: 40px;
+  }
+  .profile img {
+    max-width: 200px;
   }
   .rating-page .subheader {
     margin-top: 50px;
@@ -491,7 +505,7 @@ a.post-book {
     padding: 8px 10px;
   }
   .btn-vk {
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .article  {
     margin-bottom: 100px;
@@ -510,5 +524,9 @@ a.post-book {
 @media (min-width: 1200px) {
   .feed-amount {
     padding-bottom: 0;
+  }
+  .profile-post .article-links-info-author,
+  .profile-post .post-links .article-links-btns {
+    padding-top: 8px;
   }
 }
