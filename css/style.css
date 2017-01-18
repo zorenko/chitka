@@ -47,13 +47,13 @@ nav.nav.navbar-default {
 
 .feed-amount {
   font-size: 16px;
-  color: #787875;
+  color: #000;
   vertical-align: middle;
   padding-top: 6px;
 }
 
 a.feed-nav-btn {
-  color: #484746;
+  color: #787875;
   padding: 5px 10px !important;
   margin: 0 7px;
 }
@@ -62,19 +62,23 @@ a.feed-nav-btn:first-child {
 }
 
 a.feed-nav-btn.active {
-  color: #000;
-  background: #F0ECDD;
-  border: 1px solid #C8C8C8;
+  color: #fff;
+  background: #48AAED;
 
 }
 .btn-rounded {
   border-radius: 50px !important;
 }
-.well-lg.post {
+.well-lg.post,
+.well-lg.post-nav {
   background: #fff;
   border: 1px solid #F0F0F0;
   padding: 12px 32px;
   border-radius: 6px;
+}
+
+.post-nav ul {
+  float: right;
 }
 
 .post .post-header {
@@ -367,9 +371,7 @@ a.post-book {
     padding: 10px 10px !important;
     margin: 7px auto;
   }
-  .feed-nav {
-    margin-bottom: 25px;
-  }
+
   .feed-amount {
     padding-bottom: 10px;
   }
@@ -499,9 +501,7 @@ a.post-book {
     padding: 8px 20px !important;
     margin: 7px auto;
   }
-  .feed-nav {
-    margin-bottom: 50px;
-  }
+
   .btn-fb,
   .btn-vk {
     padding: 8px 10px;
