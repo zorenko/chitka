@@ -1,0 +1,112 @@
+.label.label-danger {
+    background-color: rgb(252,96,65);
+}
+.label-dark {
+    background: #2c4054;
+    border-color: #2c4054;
+}
+.user-admin-form .control-label {
+    padding-top: 7px;
+}
+.user-primary-row {
+    font-size: 14px;
+    padding-bottom: 5px;
+    display: block;
+}
+.user-gray-append {
+    font-size: 12px;
+    color: #C2C2C2;
+    display: block;
+    font-weight: 400;
+}
+.solution-status {
+    padding: 25px 0;
+    border-top: 1px solid #EAEAEA;
+}
+.solution-status:last-of-type {
+    border-bottom: 1px solid #EAEAEA;
+}
+.report .edit-form .input-groug {
+    padding: 20px;
+    border: 1px solid #aaa;
+}
+
+.rating .rating-table-head td:first-child {
+    width: 32%;
+}
+.rating .rating-person-about {
+    padding: 12px 0;
+    width: 21%
+}
+
+@media (max-width: 768px) {
+    .rating .rating-person-img {
+        width: 12%;
+    }
+    .rating .rating-person-about {
+        width: 11%
+    }
+}
+.rating-points-all {
+    text-align: center;
+}
+.rating-points-step {
+    text-align: center;
+}
+.social-likes__counter {
+    margin-left: 5px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+#deadline-block {
+    cursor: default;
+}
+.views-counter {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.usersCheckbox {
+    display: block !important;
+}
+.immortal-previous-daily-tasks tr:not(:first-child) td {
+    padding-top: 25px;
+}
+.immortal-previous-daily-tasks td {
+    padding-right: 10px;
+}
+
+.immortal-previous-daily-tasks td:first-child {
+    width: 130px;
+}
+.immortal-previous-daily-tasks {
+    margin-bottom: 10px;
+}
+#news-page {
+    background: linear-gradient(to right, rgba(174, 192, 200, 0.1), rgba(174, 192, 200, 0.1));
+}
+.news-item {
+    border: 1px #d7dbdf solid;
+}
