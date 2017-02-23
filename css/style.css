@@ -23,7 +23,6 @@ footer.banner {
   margin-top: 75px;
   padding: 0px 50px;
 }
-
 /* Навигация */
 .navbar-default {
   background-color: #333333;
@@ -81,7 +80,6 @@ footer.banner {
   line-height: 1.5;
   color: rgba(0, 0, 0, .8);
 }
-
 /* Рейтинг */
 .rating-page .container.rating {
   max-width: 900px;
@@ -110,7 +108,6 @@ footer.banner {
   background: #D1C6A4;
   cursor: default;
 }
-
 /* Участник */
 .participant {
   background: #fff;
@@ -157,7 +154,6 @@ footer.banner {
   font-family: "PT Serif", serif;
   font-weight: bold;
 }
-
 /* Ссылки на блоги */
 .rating-page .blog-link {
   margin-top: 10px;
@@ -206,7 +202,6 @@ footer.banner {
   line-height: 1.5;
   margin-top: 15px;
 }
-
 .rating-show-more {
   display: block;
   text-align: center;
@@ -264,12 +259,10 @@ h1 {
 .profile-aside-social.vk-link {
   background: #506E96;
 }
-
 /* Колонка с постами на всю ширину */
 .profile-content>div:first-child {
   width: 100%;
 }
-
 /* Навигация по постам */
 .post-nav ul {
   float: right;
@@ -305,7 +298,6 @@ a.feed-nav-btn.active:hover {
   background: #bbbbb5;
   cursor: default;
 }
-
 /* Посты внутри профиля */
 .well-lg.post,
 .well-lg.post-nav {
@@ -414,7 +406,6 @@ a.post-more {
   background-color: #3a5477;
   border-color: #3a5477;
 }
-
 /* Разделитель для поста */
 p.post-description:after {
   display: block;
@@ -500,152 +491,77 @@ p.post-description:after {
 }
 
 
-
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   /* /// СТРАНИЦА УЧАСТНИКА /// */
-  .profile-personal>img {
-    max-width: 150px;
-  }
-  /* Навигация по постам */
-  a.feed-nav-btn {
-    margin: 0;
-    padding: 4px 7px !important;
-  }
   /*Посты внутри профиля*/
-  .profile-post.well-lg.post {
-    padding: 15px 15px 12px;
+  /* Книга */
+  .post-content img {
+    max-width: 200px;
+    padding-top: 30px;
   }
-  .profile-post h2 {
-    font-size: 20px;
-  }
-  .post-content {
-    padding-bottom: 10px;
-  }
-  .post-content .post-description {
-    padding-bottom: 10px !important;
-    font-size: 13px;
-  }
-
-  /* /// СТРАНИЦА ПОСТА /// */
-  .article {
-    padding: 0 15px;
+  /* Социальные кнопки */
+  .profile-post .social-likes_ready {
+    text-align: left !important;
   }
 }
-@media (max-width: 768px) {
-  .navbar-default {
-    margin-bottom: 30px;
-  }
+@media (min-width: 992px) {
   /* /// СТРАНИЦА РЕЙТИНГА /// */
-  /* Подзаголовок */
-  .subheader .subheader-right {
-    display: none;
-  }
-  .rating-page .subheader .subheader-title {
-    font-size: 30px;
-  }
-  /* Навигация по рейтингу */
-  .rating-nav {
-    margin: 20px 0;
-  }
-  .rating-nav-btns {
-    margin: 0;
-  }
-  .rating-nav .rating-nav-btns li {
-    float: left;
-  }
-  .rating-page .blog-link,
-  .rating-page .btn-blog,
-  .participant .blog-post {
-    display: none;
-  }
-  .participant {
-    padding: 25px 20px;
-    border-bottom: 1px solid #eee;
-  }
-  .rating-no {
-    top: inherit;
-    left: inherit;
-    bottom: -3px;
-    right: -5px;
-    width: 30px;
-    height: 28px;
-    padding-top: 4px;
-    padding-left: 11px;
-    border-radius: 100px;
-    z-index: 10;
-  }
-  .rating-page .participant .participant-name,
-  .rating-page .participant .participant-name>a,
-  .rating-page .participant .participant-name>span>a {
+  .rating-page .subheader .subheader-text {
     font-size: 16px;
-    margin-bottom: 16px;
+    margin-top: 26px;
   }
-  .rating-page .participant-stats {
-    font-size: 12px;
-  }
-  .rating-page .participant-stats .stats-amount {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  /* /// СТРАНИЦА УЧАСТНИКА /// */
-  /* Навигация по постам */
-  .post-nav ul {
-    float: left;
-  }
-  .post-nav ul,
-  .post-nav a.btn {
-    margin: 0;
+  .participant-info {
     margin-top: 10px;
   }
-  .post-nav ul>li {
+  .rating-page .blog-link {
+    text-align: right;
+  }
+  /* /// СТРАНИЦА УЧАСТНИКА /// */
+  /* Посты внутри профиля */
+  /* Социальные кнопки */
+  .btn-fb, .btn-vk {
+    padding: 7px 9px;
+  }
+  .btn-vk {
+    margin-left: 10px;
+  }
+  /* /// СТРАНИЦА ПОСТА /// */
+  .article-header {
+    font-size: 40px;
+    padding: 30px 0 35px;
+  }
+}
+@media (max-width: 992px) {
+  /* /// СТРАНИЦА РЕЙТИНГА /// */
+  .rating-page .blog-link {
+    margin-top: 10px;
+  }
+  /* /// СТРАНИЦА УЧАСТНИКА /// */
+  /* Информация об участнике */
+  .profile-personal {
+    text-align: center;
+  }
+  .profile-personal-btn {
     display: inline-block;
   }
-  .feed-amount {
-    float: none;
+  .profile-personal-btn .profile-aside-social {
+    margin: 10px 5px 0;
   }
-  /*Посты внутри профиля*/
-  .profile-post h2 {
-    font-size: 25px;
+  /* Навигация по постам */
+  .post-nav {
+     margin-top: 20px;
   }
-
-  /* /// СТРАНИЦА ПОСТА /// */
-  .article-page nav {
-    margin-bottom: 20px !important;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  /* /// СТРАНИЦА РЕЙТИНГА /// */
+  .participant .blog-post {
+    margin-top: 45px;
   }
-  .article {
-    padding: 0 30px;
-  }
-  .article-header {
-    font-size: 25px;
-    padding: 10px 0 20px;
-  }
-  .article .post-links {
-    padding-bottom: 20px;
-  }
-  .article .article-links-info img {
-    max-width: 50px;
-  }
-  .article .article-links-info-author {
-    padding-right: 15px;
-  }
-  .article-links-info-book {
-    margin-top: 30px;
-  }
-  .article-paragraphs {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .article-paragraphs p,
-  .article-paragraphs p span {
-    font-size: 18px !important;
-  }
-  .article-header-btns {
-    margin-top: 0px;
-  }
-  .btn-fb,
-  .btn-vk {
-    padding: 5px 8px;
+  /* /// СТРАНИЦА УЧАСТНИКА /// */
+  /* Информация об участнике */
+  h1 {
+    font-size: 21px;
+    padding-bottom: 5px;
   }
 }
 @media (min-width: 768px) {
@@ -691,7 +607,6 @@ p.post-description:after {
   .rating-show-more {
     margin-top: 10px;
   }
-
   /* /// СТРАНИЦА УЧАСТНИКА /// */
   /* Навигация по постам */
   .feed-amount {
@@ -701,84 +616,178 @@ p.post-description:after {
   .btn-vk {
     padding: 5px 8px;
   }
-
   /* /// СТРАНИЦА ПОСТА /// */
   h1.article-header {
     padding-bottom: 30px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 768px) {
+  .navbar-default {
+    margin-bottom: 30px;
+  }
   /* /// СТРАНИЦА РЕЙТИНГА /// */
+  /* Подзаголовок */
+  .subheader .subheader-right {
+    display: none;
+  }
+  .rating-page .subheader .subheader-title {
+    font-size: 30px;
+  }
+  /* Навигация по рейтингу */
+  .rating-nav {
+    margin: 20px 0;
+  }
+  .rating-nav-btns {
+    margin: 0;
+  }
+  .rating-nav .rating-nav-btns li {
+    float: left;
+  }
+  .rating-page .blog-link,
+  .rating-page .btn-blog,
   .participant .blog-post {
-    margin-top: 45px;
+    display: none;
+  }
+  .participant {
+    padding: 25px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .rating-no {
+    top: inherit;
+    left: inherit;
+    bottom: -3px;
+    right: -5px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 11px;
+    border-radius: 100px;
+    z-index: 10;
+  }
+  .rating-page .participant .participant-name,
+  .rating-page .participant .participant-name>a,
+  .rating-page .participant .participant-name>span>a {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .rating-page .participant-stats {
+    font-size: 12px;
+  }
+  .rating-page .participant-stats .stats-amount {
+    font-size: 24px;
+    line-height: 24px;
   }
   /* /// СТРАНИЦА УЧАСТНИКА /// */
-  /* Информация об участнике */
-  h1 {
-    font-size: 21px;
-    padding-bottom: 5px;
+  /* Навигация по постам */
+  .post-nav ul {
+    float: left;
   }
-}
-@media (max-width: 992px) {
-  /* /// СТРАНИЦА РЕЙТИНГА /// */
-  .rating-page .blog-link {
+  .post-nav ul,
+  .post-nav a.btn {
+    margin: 0;
     margin-top: 10px;
   }
-  /* /// СТРАНИЦА УЧАСТНИКА /// */
-  /* Информация об участнике */
-  .profile-personal {
-    text-align: center;
-  }
-  .profile-personal-btn {
+  .post-nav ul>li {
     display: inline-block;
   }
-  .profile-personal-btn .profile-aside-social {
-    margin: 10px 5px 0;
+  .feed-amount {
+    float: none;
+  }
+  /*Посты внутри профиля*/
+  .profile-post h2 {
+    font-size: 25px;
+  }
+  /* /// СТРАНИЦА ПОСТА /// */
+  .article-page nav {
+    margin-bottom: 20px !important;
+  }
+  .article {
+    padding: 0 30px;
+  }
+  .article-header {
+    font-size: 25px;
+    padding: 10px 0 20px;
+  }
+  .article .post-links {
+    padding-bottom: 20px;
+  }
+  .article .article-links-info img {
+    max-width: 50px;
+  }
+  .article .article-links-info-author {
+    padding-right: 15px;
+  }
+  .article-links-info-book {
+    margin-top: 30px;
+  }
+  .article-paragraphs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .article-paragraphs p,
+  .article-paragraphs p span {
+    font-size: 18px !important;
+  }
+  .article-header-btns {
+    margin-top: 0px;
+  }
+  .btn-fb,
+  .btn-vk {
+    padding: 5px 8px;
+  }
+}
+@media (max-width: 600px) {
+  /* /// СТРАНИЦА УЧАСТНИКА /// */
+  .profile-personal>img {
+    max-width: 150px;
   }
   /* Навигация по постам */
-  .post-nav {
-     margin-top: 20px;
+  a.feed-nav-btn {
+    margin: 0;
+    padding: 4px 7px !important;
   }
-}
-@media (min-width: 992px) {
-  /* /// СТРАНИЦА РЕЙТИНГА /// */
-  .rating-page .subheader .subheader-text {
-    font-size: 16px;
-    margin-top: 26px;
-  }
-  .participant-info {
-    margin-top: 10px;
-  }
-  .rating-page .blog-link {
-    text-align: right;
-  }
-  /* /// СТРАНИЦА УЧАСТНИКА /// */
-  /* Посты внутри профиля */
-  /* Социальные кнопки */
-  .btn-fb, .btn-vk {
-    padding: 7px 9px;
-  }
-  .btn-vk {
-    margin-left: 10px;
-  }
-
-  /* /// СТРАНИЦА ПОСТА /// */
-  .article-header {
-    font-size: 40px;
-    padding: 30px 0 35px;
-  }
-}
-
-@media (max-width: 1200px) {
-  /* /// СТРАНИЦА УЧАСТНИКА /// */
   /*Посты внутри профиля*/
-  /* Книга */
-  .post-content img {
-    max-width: 200px;
-    padding-top: 30px;
+  .profile-post.well-lg.post {
+    padding: 15px 15px 12px;
   }
-  /* Социальные кнопки */
-  .profile-post .social-likes_ready {
-    text-align: left !important;
+  .profile-post h2 {
+    font-size: 20px;
+  }
+  .post-content {
+    padding-bottom: 10px;
+  }
+  .post-content .post-description {
+    padding-bottom: 10px !important;
+    font-size: 13px;
+  }
+  /* /// СТРАНИЦА ПОСТА /// */
+  .article {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 425px) {
+  /* /// СТРАНИЦА РЕЙТИНГА /// */
+  .subheader {
+    text-align: center;
+  }
+  .rating-nav-btns>li>a {
+    padding: 8px 7px;
+    margin: 0;
+  }
+  .participant {
+    padding: 15px 10px;
+  }
+  .rating-no {
+    bottom: -5px;
+    right: -5px;
+    width: 24px;
+    height: 23px;
+    font-size: 12px;
+    padding-top: 3px;
+    padding-left: 8px;
+}
+  .rating-page .participant-stats .stats-amount {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
