@@ -126,7 +126,6 @@ footer.banner {
   width: 40px;
   height: 38px;
   padding-top: 10px;
-  padding-left: 0px;
   font-weight: bold;
   text-align: center;
 }
@@ -660,7 +659,6 @@ p.post-description:after {
     width: 30px;
     height: 30px;
     padding-top: 5px;
-    padding-left: 11px;
     border-radius: 100px;
     z-index: 10;
   }
