@@ -1,0 +1,140 @@
+// Colors
+$white: #fff;
+$grey: #9d9d9d;
+$body: #f7f4ef;
+$primary: #333;
+$success: #87CE50;
+$warning: #F6CB23;
+$danger: #FB612C;
+$process: #2DB7F5;
+$default: #BCC0C1;
+$fb: #3C579E;
+$vk: #506E96;
+
+// Hover colors
+$primary-hover: rgba($primary, .9);
+$success-hover: rgba($success, .9);
+$warning-hover: rgba($warning, .9);
+$danger-hover: rgba($danger, .9);
+$process-hover: rgba($process, .9);
+$default-hover: rgba($default, .9);
+$fb-hover: rgba($fb, .9);
+$vk-hover: rgba($vk, .9);
+
+//
+$radius: 4px;
+$padding: 7px 12px;
+
+
+//General styles
+body {
+  background: $body;
+  font-family: "Roboto", Roboto, Arial, sans-serif;
+}
+.content {
+  padding-bottom: 90px;
+  >.container {
+    width: 800px;
+  }
+}
+
+.btn,
+.navbar-default .navbar-nav > li > a.btn {
+  color: #fff;
+  border: none;
+  border-radius: $radius;
+  &:hover, &:focus {
+    color: #fff;
+    border: none;
+  }
+}
+.label {
+  border-radius: $radius;
+  padding: $padding;
+  font-size: 12px;
+  &:hover {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+.btn-primary,
+.navbar-default .navbar-nav > li > a.btn-primary,
+.nav > li > a.btn-primary,
+.label-primary {
+  background: $primary;
+  &:hover, &:focus {
+    background: $primary-hover;
+  }
+}
+.btn-success,
+.navbar-default .navbar-nav > li > a.btn-success,
+.nav > li > a.btn-success,
+.label-success {
+  background: $success;
+  &:hover, &:focus {
+    background: $success-hover;
+  }
+}
+.btn-warning,
+.navbar-default .navbar-nav > li > a.btn-warning,
+.nav > li > a.btn-warning,
+.label-warning {
+  background: $warning;
+  &:hover, &:focus {
+    background: $warning-hover;
+  }
+}
+.btn-danger,
+.navbar-default .navbar-nav > li > a.btn-danger,
+.nav > li > a.btn-danger,
+.label-danger {
+  background: $danger;
+  &:hover, &:focus {
+    background: $danger-hover;
+  }
+}
+.btn-default,
+.navbar-default .navbar-nav > li > a.btn-default,
+.nav > li > a.btn-default,
+.label-default {
+  background: $default;
+  &:hover, &:focus {
+    background: $default-hover;
+  }
+}
+.label.label-process {
+  background: $process;
+  &:hover, &:focus {
+    background: $process-hover;
+  }
+}
+
+.alert {
+  min-height: 65px;
+  font-weight: bold;
+  &__text {
+    float: left;
+    margin-top: 6px;
+  }
+  &__btn {
+    display: block;
+    float: right;
+  }
+}
+
+.well {
+  padding: 30px;
+  background: $white;
+  border: none;
+  border-radius: $radius;
+  box-shadow: 0px 1px 5px 0px rgba($primary, 0.1);
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: 1px solid #ececec;
+}

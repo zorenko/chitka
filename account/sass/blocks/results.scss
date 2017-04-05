@@ -1,0 +1,66 @@
+.results {
+
+  &__title {
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  &__current {
+    margin-bottom: 60px;
+  }
+  &__week {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin: 0;
+    float: left;
+    width: 55%;
+  }
+  &__table-header {
+    padding: 15px 0;
+    &>div {
+      width: 15%;
+      float: left;
+      color: $grey;
+    }
+    &>.total-score {
+      text-align: right;
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  table > tbody > tr > td {
+    width: 15%;
+    padding: 25px 0;
+    color: $grey;
+  }
+  table > tbody > tr > td > .glyphicon {
+    margin-right: 10px;
+  }
+  table > tbody > tr > td.icon {
+    width: 5%;
+  }
+  table > tbody > tr > td.date {
+    font-weight: bold;
+  }
+  table > tbody > tr > td.task {
+    width: 35%;
+    font-weight: bold;
+  }
+  table > tbody > tr > td.status {
+    text-align: right;
+  }
+  table > tbody > tr > td.reviews {
+    position: relative;
+    padding-left: 25px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 19px;
+      top: 25px;
+      left: 0;
+      background: url("../uploads/img/feather.png");
+    }
+  }
+}
