@@ -5,8 +5,10 @@ body {
 .content {
   padding-top: 70px;
   padding-bottom: 90px; }
-  .content > .container {
-    width: 800px; }
+
+.content.dashboard > .container,
+.content.book-page > .container {
+  width: 800px; }
 
 .btn,
 .navbar-default .navbar-nav > li > a.btn {
@@ -335,3 +337,63 @@ input[type="checkbox"] + label::before {
 
 .book-nav-week {
   padding: 10px 0px; }
+
+.task__steps {
+  padding: 20px 20px; }
+  .task__steps input[type="checkbox"] + label::before {
+    border-radius: 50%; }
+  .task__steps .task__step {
+    position: relative;
+    color: #9d9d9d;
+    font-size: 13px;
+    padding-bottom: 20px;
+    padding-left: 40px; }
+    .task__steps .task__step::after {
+      position: absolute;
+      content: '';
+      top: -2px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #D0D0D0;
+      border-radius: 50%;
+      background: #fefcf3; }
+    .task__steps .task__step::before {
+      position: absolute;
+      content: '';
+      top: 10px;
+      left: 9px;
+      width: 2px;
+      height: 20px;
+      background: #D0D0D0;
+      height: 100%; }
+    .task__steps .task__step .comment {
+      display: block;
+      font-size: 12px;
+      color: rgba(157, 157, 157, 0.8);
+      margin-top: 5px; }
+    .task__steps .task__step:last-child {
+      padding-bottom: 0; }
+      .task__steps .task__step:last-child::before {
+        display: none; }
+    .task__steps .task__step--current {
+      color: #000; }
+      .task__steps .task__step--current::after {
+        border: 2px solid #2DB7F5; }
+    .task__steps .task__step--complete::after {
+      border: 2px solid #87CE50;
+      background: #87CE50 url(../img/svg/checked.svg) center center no-repeat; }
+
+.task__form input, .task__form label, .task__form textarea {
+  display: block;
+  width: 100%; }
+
+.task__form label[for="posttext"] {
+  width: 50%;
+  float: left; }
+
+.task__form .label {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; }

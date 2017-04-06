@@ -6,6 +6,9 @@ body {
 .content {
   padding-top: 70px;
   padding-bottom: 90px;
+}
+.content.dashboard,
+.content.book-page {
   >.container {
     width: 800px;
   }
