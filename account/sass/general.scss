@@ -1,37 +1,10 @@
-// Colors
-$white: #fff;
-$grey: #9d9d9d;
-$body: #f7f4ef;
-$primary: #333;
-$success: #87CE50;
-$warning: #F6CB23;
-$danger: #FB612C;
-$process: #2DB7F5;
-$default: #BCC0C1;
-$fb: #3C579E;
-$vk: #506E96;
-
-// Hover colors
-$primary-hover: rgba($primary, .9);
-$success-hover: rgba($success, .9);
-$warning-hover: rgba($warning, .9);
-$danger-hover: rgba($danger, .9);
-$process-hover: rgba($process, .9);
-$default-hover: rgba($default, .9);
-$fb-hover: rgba($fb, .9);
-$vk-hover: rgba($vk, .9);
-
-//
-$radius: 4px;
-$padding: 7px 12px;
-
-
 //General styles
 body {
   background: $body;
   font-family: "Roboto", Roboto, Arial, sans-serif;
 }
 .content {
+  padding-top: 70px;
   padding-bottom: 90px;
   >.container {
     width: 800px;
@@ -43,9 +16,14 @@ body {
   color: #fff;
   border: none;
   border-radius: $radius;
+  padding: $padding;
+  font-weight: normal;
   &:hover, &:focus {
     color: #fff;
     border: none;
+  }
+  &>.glyphicon {
+    padding-right: 7px;
   }
 }
 .label {
@@ -137,4 +115,9 @@ body {
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   border-top: 1px solid #ececec;
+}
+
+
+input[type="checkbox"] + label::before {
+  background: $white;
 }

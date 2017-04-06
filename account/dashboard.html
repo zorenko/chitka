@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Добро пожаловать!</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
 
   </head>
-  <body class="dashboard">
+  <body>
     <header class="header">
       <nav class="nav navbar navbar-default main-nav">
         <div class="container">
@@ -91,37 +92,37 @@
         </div><!-- /.container -->
       </div><!-- /.subheader -->
     </header>
-    <div class="content">
+    <div class="content dashboard">
       <div class="container">
-        <div class="time">
+        <div class="dashboard__time">
           <div class="row">
-            <div class="time__today col-xs-12 col-sm-4">
-              Неделя <span class="time__week"> 2 / 5</span>,
-              День <span class="time__day"> 11 / 49</span>
+            <div class="dashboard__time__today col-xs-12 col-sm-4">
+              Неделя <span class="dashboard__time__week"> 2 / 5</span>,
+              День <span class="dashboard__time__day"> 11 / 49</span>
             </div>
-            <div class="time__system col-xs-12 col-sm-4 pull-right">Время ситемы: <span class="time__clock"> 16:40</span></div>
+            <div class="dashboard__time__system col-xs-12 col-sm-4 pull-right">Время ситемы: <span class="dashboard__time__clock"> 16:40</span></div>
           </div><!-- /.row -->
-        </div><!-- /.time -->
+        </div><!-- /.dashboard__time -->
         <div class="alert alert-warning" role="alert">
           <div class="alert__text">Выполнено 2 задания из 4</div>
           <a href="#" class="btn btn-primary alert__btn" role="button">Перейти к заданиям</a>
         </div><!-- /.alert -->
-        <div class="message">
-          <h1 class="message__title">
+        <div class="dashboard__message">
+          <h1 class="dashboard__message__title">
             Добро пожаловать на неделю 2!
           </h1>
-          <div class="message__text">
+          <div class="dashboard__message__text">
             <p>Поздравляем тех, кто прошел прошлые 7 дней и особенно тех, кто прочитал всю книгу за неделю!</p>
             <p>Впереди очередные 200 страниц, вы узнаете о том, как управлять своей энергией, не выгорать и как полезно провести время, если вы не можете уснуть. Также вы получите несколько практических упражнений, которые помогут вам жить лучше и читать больше.</p>
           </div>
           <a href="#" class="btn btn-success" role="button">Перейти к заданиям</a>
           <a href="#" class="btn btn-default" role="button">Редактировать</a>
-        </div>
-        <div class="results well">
-          <h2 class="results__title">Результаты</h2>
-          <div class="results__current">
-            <div class="results__table-header">
-              <h6 class="results__week">Неделя 2</h6>
+        </div><!-- /.dashboard__message -->
+        <div class="dashboard__results well">
+          <h2 class="dashboard__results__title">Результаты</h2>
+          <div class="dashboard__results__current">
+            <div class="dashboard__results__table-header">
+              <h6 class="dashboard__results__week">Неделя 2</h6>
             </div><!-- /.results__table-header -->
             <table class="table">
               <tr>
@@ -141,14 +142,14 @@
                 <td class="status"><span class="label label-success">Принято</span></td>
               </tr>
             </table>
-          </div><!-- /.results__current -->
-          <div class="results__past">
-            <div class="results__table-header">
-              <h6 class="results__week">Неделя 1</h6>
+          </div><!-- /.dashboard__results__current -->
+          <div class="dashboard__results__past">
+            <div class="dashboard__results__table-header">
+              <h6 class="dashboard__results__week">Неделя 1</h6>
               <div class="">Баллы</div>
               <div class="">Шеры</div>
               <div class="total-score">246 баллов</div>
-            </div><!-- /.results__table-header -->
+            </div><!-- /.dashboard__results__table-header -->
             <table class="table">
               <tr>
                 <td class="icon"><span class="glyphicon glyphicon-globe"></span></td>
@@ -167,11 +168,11 @@
                 <td class="status"><span class="label label-danger">Отклонено</span></td>
               </tr>
             </table>
-          </div><!-- /.results__past -->
-        </div><!-- /.results -->
+          </div><!-- /.dashboard__results__past -->
+        </div><!-- /.dashboard__results -->
 
       </div><!-- /.container -->
-    </div><!-- /.content -->
+    </div><!-- /.content .dashboard -->
 
 
 
