@@ -93,30 +93,80 @@
       </div><!-- /.subheader -->
     </header>
 
-    <div class="content task task--start">
+    <div class="content task task--review">
       <div class="container">
         <div class="row">
           <aside class="col-xs-12 col-sm-3">
             <div class="alert alert-warning task__steps">
               <div class="task__step task__step--complete">Написать конспект</div>
-              <div class="task__step task__step--current">Отправить на проверку</div>
-              <div class="task__step">Оценить работу читателя - 1</div>
-              <div class="task__step">Оценить работу читателя - 2</div>
+              <div class="task__step task__step--complete">Отправить на проверку</div>
+              <div class="task__step task__step--complete">Оценить работу читателя - 1</div>
+              <div class="task__step task__step--complete task__step--current">Оценить работу читателя - 2</div>
               <div class="task__step">Поделиться конспектом <span class="comment">По желанию</span></div>
               <div class="task__step">Получить оценки</div>
             </div>
             <span class="btn btn-default"><span class="glyphicon glyphicon-question-sign"></span>Рекомендации по конспектам</span>
           </aside>
+
           <div class="col-xs-12 col-sm-8">
-            <a href="/book.html" class="back-link"><span class="glyphicon glyphicon-menu-left"></span> Вернуться к книге</a>
-            <h1 class="task__title">Конспект дня</h1>
-            <div class="alert alert-success">Работа сохранена. Отправьте на проверку, когда будете готовы</div>
-            <form action="/echo" class="task__form">
-              <label for="posttitle" class="" >Заголовок поста</label>
-              <input type="text" id="posttitle" class="form-control ">
-              <label for="posttext" class="" >Текст</label><label for="posttext" class="text-right" ><span class="label label-danger"> </span> 465 знаков — много</label>
-              <textarea rows="6" class="" id="posttext">When it comes to cooking there are few tools that are more versatile in the kitchen than the microwave. This device offers so many functions when it comes to cooking that most people never bother to utilize. It’s sad really. In most homes, the microwave has been relegated to doing duty as a meat defroster, popcorn popper, and coffee warmer rather than using is as the fabulous device for actual food preparation that it really is capable of being.</textarea>
-              <button type="button" class="btn btn-primary">Сохранить <span class="glyphicon glyphicon-arrow-right"> </span></button>
+            <div class="row">
+              <div class="col-xs-8">
+                <a href="/book.html" class="back-link"><span class="glyphicon glyphicon-menu-left"></span> Вернуться к книге</a>
+                <h1 class="task__title">Оцените работу читателя 2</h1>
+              </div>
+              <div class="col-xs-4 task__user">
+                <div class="row">
+                  <div class="col-xs-5 col-xs-offset-3 task__user__name">Сергей Есаулов</div>
+                  <div class="col-xs-4 task__user__pic"><img src="assets/img/img_profile.png" alt="user" class="img-responsive img-circle"></div>
+                </div>
+              </div>
+            </div>
+            <form action="/echo" class="task__form task__form--review well">
+              <h2 >Репутация</h2>
+              <p>Репутация – это то, что о вас думают и говорят, когда вас нет рядом (когда вы рядом,о вас, как правило, думают и говорят лучше). Думайте о своей репутации постоянно. Бойтесь ее потерять (это легко). Работайте на нее постоянно. Англичанин купил новый «роллс-ройс». Едет, счастливый и довольный, домой. Звонок из салона:...</p>
+              <div class="row">
+                <div class="btn-group col-xs-12" role="group" aria-label="...">
+                  <button type="button" class="btn btn-default">Не нравится</button>
+                  <button type="button" class="btn btn-default">Нормально</button>
+                  <button type="button" class="btn btn-default">Нравится</button>
+                  <button type="button" class="btn btn-default">Очень нравится</button>
+                </div>
+                <div class="col-xs-12">
+                  <button type="button" class="btn btn-default">Продолжить<span class="glyphicon glyphicon-arrow-right"> </span></button>
+                </div>
+              </div>
+            </form>
+
+            <form action="/echo" class="task__form task__form--review well">
+              <h2 >Репутация</h2>
+              <p>Репутация – это то, что о вас думают и говорят, когда вас нет рядом (когда вы рядом,о вас, как правило, думают и говорят лучше). Думайте о своей репутации постоянно. Бойтесь ее потерять (это легко). Работайте на нее постоянно. Англичанин купил новый «роллс-ройс». Едет, счастливый и довольный, домой. Звонок из салона:...</p>
+              <div class="row">
+                <div class="btn-group col-xs-12" role="group" aria-label="...">
+                  <button type="button" class="btn btn-default">Не нравится</button>
+                  <button type="button" class="btn btn-default">Нормально</button>
+                  <button type="button" class="btn btn-success">Нравится</button>
+                  <button type="button" class="btn btn-default">Очень нравится</button>
+                </div>
+                <div class="col-xs-12">
+                  <button type="button" class="btn btn-primary">Продолжить<span class="glyphicon glyphicon-arrow-right"> </span></button>
+                </div>
+              </div>
+            </form>
+
+            <form action="/echo" class="task__form task__form--review well">
+              <h2 >Репутация</h2>
+              <p>Репутация – это то, что о вас думают и говорят, когда вас нет рядом (когда вы рядом,о вас, как правило, думают и говорят лучше). Думайте о своей репутации постоянно. Бойтесь ее потерять (это легко). Работайте на нее постоянно. Англичанин купил новый «роллс-ройс». Едет, счастливый и довольный, домой. Звонок из салона:...</p>
+              <div class="row">
+                <div class="btn-group col-xs-12" role="group" aria-label="...">
+                  <button type="button" class="btn btn-default">Не нравится</button>
+                  <button type="button" class="btn btn-default">Нормально</button>
+                  <button type="button" class="btn btn-success">Нравится</button>
+                  <button type="button" class="btn btn-default">Очень нравится</button>
+                </div>
+                <div class="col-xs-12">
+                  <div class="blocked"><span class="glyphicon glyphicon-lock"></span>Внесение изменений невозможно</div>
+                </div>
+              </div>
             </form>
           </div>
         </div>

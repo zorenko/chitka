@@ -1,5 +1,10 @@
 .task {
-
+  .comment {
+    display: block;
+    font-size: 12px;
+    color: rgba($grey, .8);
+    margin-top: 5px;
+  }
 }
 
 .task__steps {
@@ -36,12 +41,6 @@
       background: #D0D0D0;
       height: 100%;
     }
-    .comment {
-      display: block;
-      font-size: 12px;
-      color: rgba($grey, .8);
-      margin-top: 5px;
-    }
 
     &:last-child {
       padding-bottom: 0;
@@ -63,20 +62,142 @@
     }
   }
 }
-
+.task__title {
+  padding-top: 40px;
+}
 .task__form {
-  input, label, textarea {
+  &--process {
+
+  }
+  &--complete {
+  }
+  padding-bottom: 50px;
+  input[type="text"], label, textarea {
     display: block;
     width: 100%;
   }
-  label[for="posttext"] {
+  label {
+    margin-bottom: 15px;
+  }
+  label[for="task__text"] {
     width: 50%;
     float: left;
   }
-  .label {
+  input, textarea {
+    margin-bottom: 25px;
+  }
+  .input-group {
+    margin-bottom: 10px;
+  }
+  input[type="checkbox"] + label::before {
+    top: 6px;
+  }
+  .btn {
+    display: inline-block;
+    >.glyphicon {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+    &-default {
+      .glyphicon {
+        display: none;
+      }
+    }
+  }
+  .btn-group {
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 100%;
+    margin: 10px 0 25px;
+    .btn {
+      display: block;
+      width: 25%;
+    }
+  }
+}
+.task__countdown {
+  position: relative;
+  padding-left: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
+    background: $grey;
+  }
+  &::after {
+    content: " — слишком много";
+  }
+  &--toomuch,
+  &--toofew {
+    &::before {
+      background: $danger;
+    }
+    &::after {
+      content: " — много";
+    }
+  }
+  &--toofew {
+    &::after {
+      content: " — мало";
+    }
+  }
+  &--normal,
+  &--abitmuch {
+    &::before {
+      background: $warning;
+    }
+    &::after {
+      content: " — нормально";
+    }
+  }
+  &--abitmuch {
+    &::after {
+      content: " — многовато";
+    }
+  }
+  &--optimal {
+    &::before {
+      background: $success;
+    }
+    &::after {
+      content: " — оптимально";
+    }
+  }
+}
+
+.task__user {
+  &__name {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+
+.task__form--review {
+  h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $grey;
+    padding-bottom: 20px;
+  }
+  .btn {
+    &-default {
+      .glyphicon {
+        display: inline-block;
+      }
+    }
+  }
+  .blocked {
+    color: $grey;
+    .glyphicon {
+      padding-right: 10px;
+    }
   }
 }

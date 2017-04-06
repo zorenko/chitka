@@ -26,7 +26,7 @@ body {
     border: none;
   }
   &>.glyphicon {
-    padding-right: 7px;
+    padding-right: 10px;
   }
 }
 .label {
@@ -83,6 +83,18 @@ body {
     background: $default-hover;
   }
 }
+.btn-group>.btn {
+  border: 1px solid transparent;
+  &-success {
+    border-color: $success;
+  }
+  &-default {
+    background: #fff;
+    color: $primary;
+    border-color: $primary;
+  }
+
+}
 .label.label-process {
   background: $process;
   &:hover, &:focus {
@@ -91,7 +103,6 @@ body {
 }
 
 .alert {
-  min-height: 65px;
   font-weight: bold;
   &__text {
     float: left;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #fbfbfb;
   font-family: "Roboto", Roboto, Arial, sans-serif; }
@@ -24,7 +25,7 @@ body {
     border: none; }
   .btn > .glyphicon,
   .navbar-default .navbar-nav > li > a.btn > .glyphicon {
-    padding-right: 7px; }
+    padding-right: 10px; }
 
 .label {
   border-radius: 4px;
@@ -104,13 +105,21 @@ body {
   .label-default:focus {
     background: rgba(188, 192, 193, 0.9); }
 
+.btn-group > .btn {
+  border: 1px solid transparent; }
+  .btn-group > .btn-success {
+    border-color: #87CE50; }
+  .btn-group > .btn-default {
+    background: #fff;
+    color: #27384A;
+    border-color: #27384A; }
+
 .label.label-process {
   background: #2DB7F5; }
   .label.label-process:hover, .label.label-process:focus {
     background: rgba(45, 183, 245, 0.9); }
 
 .alert {
-  min-height: 65px;
   font-weight: bold; }
   .alert__text {
     float: left;
@@ -220,6 +229,9 @@ input[type="checkbox"] + label::before {
     font-weight: bold; }
   .dashboard__time__system {
     text-align: right; }
+
+.dashboard .alert {
+  min-height: 65px; }
 
 .dashboard__message {
   margin: 60px 30px 70px; }
@@ -338,6 +350,12 @@ input[type="checkbox"] + label::before {
 .book-nav-week {
   padding: 10px 0px; }
 
+.task .comment {
+  display: block;
+  font-size: 12px;
+  color: rgba(157, 157, 157, 0.8);
+  margin-top: 5px; }
+
 .task__steps {
   padding: 20px 20px; }
   .task__steps input[type="checkbox"] + label::before {
@@ -367,11 +385,6 @@ input[type="checkbox"] + label::before {
       height: 20px;
       background: #D0D0D0;
       height: 100%; }
-    .task__steps .task__step .comment {
-      display: block;
-      font-size: 12px;
-      color: rgba(157, 157, 157, 0.8);
-      margin-top: 5px; }
     .task__steps .task__step:last-child {
       padding-bottom: 0; }
       .task__steps .task__step:last-child::before {
@@ -384,16 +397,89 @@ input[type="checkbox"] + label::before {
       border: 2px solid #87CE50;
       background: #87CE50 url(../img/svg/checked.svg) center center no-repeat; }
 
-.task__form input, .task__form label, .task__form textarea {
-  display: block;
-  width: 100%; }
+.task__title {
+  padding-top: 40px; }
 
-.task__form label[for="posttext"] {
-  width: 50%;
-  float: left; }
+.task__form {
+  padding-bottom: 50px; }
+  .task__form input[type="text"], .task__form label, .task__form textarea {
+    display: block;
+    width: 100%; }
+  .task__form label {
+    margin-bottom: 15px; }
+  .task__form label[for="task__text"] {
+    width: 50%;
+    float: left; }
+  .task__form input, .task__form textarea {
+    margin-bottom: 25px; }
+  .task__form .input-group {
+    margin-bottom: 10px; }
+  .task__form input[type="checkbox"] + label::before {
+    top: 6px; }
+  .task__form .btn {
+    display: inline-block; }
+    .task__form .btn > .glyphicon {
+      padding-right: 0;
+      padding-left: 10px; }
+    .task__form .btn-default .glyphicon {
+      display: none; }
+  .task__form .btn-group {
+    display: block;
+    width: 100%;
+    margin: 10px 0 25px; }
+    .task__form .btn-group .btn {
+      display: block;
+      width: 25%; }
 
-.task__form .label {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%; }
+.task__countdown {
+  position: relative;
+  padding-left: 20px; }
+  .task__countdown::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #9d9d9d; }
+  .task__countdown::after {
+    content: " — слишком много"; }
+  .task__countdown--toomuch::before, .task__countdown--toofew::before {
+    background: #FB612C; }
+  .task__countdown--toomuch::after, .task__countdown--toofew::after {
+    content: " — много"; }
+  .task__countdown--toofew::after {
+    content: " — мало"; }
+  .task__countdown--normal::before, .task__countdown--abitmuch::before {
+    background: #F6CB23; }
+  .task__countdown--normal::after, .task__countdown--abitmuch::after {
+    content: " — нормально"; }
+  .task__countdown--abitmuch::after {
+    content: " — многовато"; }
+  .task__countdown--optimal::before {
+    background: #87CE50; }
+  .task__countdown--optimal::after {
+    content: " — оптимально"; }
+
+.task__user__name {
+  font-size: 16px;
+  margin-top: 10px; }
+
+.task__form--review h2 {
+  font-size: 24px;
+  padding-bottom: 20px; }
+
+.task__form--review p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #9d9d9d;
+  padding-bottom: 20px; }
+
+.task__form--review .btn-default .glyphicon {
+  display: inline-block; }
+
+.task__form--review .blocked {
+  color: #9d9d9d; }
+  .task__form--review .blocked .glyphicon {
+    padding-right: 10px; }
