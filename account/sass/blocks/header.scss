@@ -4,6 +4,15 @@
   border-radius: 0;
   border: none;
   margin-bottom: 0;
+  &.navbar-default .navbar-nav>li>a:focus,
+  &.navbar-default .navbar-nav>li>a:hover,
+  &.navbar-default .navbar-brand:focus,
+  &.navbar-default .navbar-brand:hover,
+  a:focus,
+  a:hover {
+    text-decoration: none;
+    color: $white;
+  }
 }
 
 .navbar .header__logo {

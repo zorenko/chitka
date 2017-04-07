@@ -17,19 +17,47 @@
         .link {
           display: block;
           margin-top: 10px;
-
         }
-      }
-      .glyphicon {
-        margin-right: 10px;
-        top: 2px;
-      }
-      .btn {
-        margin-right: 20px;
       }
       img {
         margin-bottom: 30px;
+        margin-left: 40px;
       }
+    }
+  }
+  &--feedback {
+    .feedback {
+      margin: 40px 0;
+      .alert {
+        font-weight: 100;
+        .count {
+          position: relative;
+          padding-left: 25px;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 16px;
+            height: 18.57px;
+            top: 0;
+            left: 0;
+            background: url(../img/feather--green.png);
+          }
+        }
+      }
+      &--user,
+      &--reviews {
+        font-weight: 600;
+      }
+    }
+  }
+  &--share,
+  &--feedback {
+    .glyphicon {
+      margin-right: 7px;
+      top: 2px;
+    }
+    .btn {
+      margin-right: 20px;
     }
   }
 }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Добро пожаловать!</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav navbar navbar-default main-nav">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand text-uppercase header__logo" href="#">#Читка</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div><!-- /.navbar-header -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-center ">
+              <li><a href="#">Задания</a></li>
+              <li><a href="#">Рейтинг</a></li>
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Мой блог</a></li>
+              <li><a href="#">Группа Facebook</a></li>
+              <li><a href="#">Помощь</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Имя пользователя<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/me">Профиль</a></li>
+                  <li><a href="/auth/logout" data-method="post">Выйти</a></li>
+                </ul>
+              </li><!-- /.dropdown -->
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav><!-- /.main-nav -->
+      <div class="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-3">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#" class="btn btn-success subheader__day"><span><span class="glyphicon glyphicon-ok"></span>День</span></a></li>
+                <li>
+                  <a href="#" class="btn btn-danger subheader__week">
+                    <span>Неделя</span>
+                    <span><span class="glyphicon glyphicon-time"></span>2 дня</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-9 pull-right">
+              <div class="row">
+                <div class="col-sm-2 col-sm-offset-2">
+                  <a href="#" class="subheader__item">
+                    <span class="subheader__num">89</span>
+                    <span class="subheader__text">Шеров<br>из 100</span>
+                  </a>
+                </div>
+                <div class="col-sm-2">
+                  <a href="#" class="subheader__item">
+                    <span class="subheader__num">1</span>
+                    <span class="subheader__text">Жизнь осталась</span>
+                  </a>
+                </div>
+                <div class="col-sm-2">
+                  <a href="#" class="subheader__item">
+                    <span class="subheader__text" style="margin-top: 3px;">Стандартный читатель</span>
+                  </a>
+                </div>
+                <div class="col-sm-4">
+                  <a class="subheader__item subheader__item--fund" href="http://chitau.org/#rec10324795" target="_blank">
+                    <span class="subheader__num">1 230 000 Р</span>
+                    <span class="subheader__text">Призовой фонд</span>
+                    <div class="subheader__help"><span class="glyphicon glyphicon-question-sign"></span></div>
+                  </a>
+                </div>
+              </div><!-- /.row -->
+            </div><!-- /.col-xs-9 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.subheader -->
+    </header>
+
+    <div class="content task task--feedback">
+      <div class="container">
+        <div class="row">
+          <aside class="col-xs-12 col-sm-3">
+            <div class="alert alert-warning task__steps">
+              <div class="task__step task__step--complete">Написать конспект</div>
+              <div class="task__step task__step--complete">Отправить на проверку</div>
+              <div class="task__step task__step--complete">Оценить работу читателя - 1</div>
+              <div class="task__step task__step--complete">Оценить работу читателя - 2</div>
+              <div class="task__step task__step--complete">Поделиться конспектом <span class="comment">По желанию</span></div>
+              <div class="task__step task__step--current task__step--complete">Получить оценки</div>
+            </div>
+            <span class="btn btn-default"><span class="glyphicon glyphicon-question-sign"></span>Рекомендации по конспектам</span>
+          </aside>
+
+          <div class="col-xs-12 col-sm-8">
+            <a href="/book.html" class="back-link"><span class="glyphicon glyphicon-menu-left"></span> Вернуться к книге</a>
+
+            <div class="feedback feedback--none">
+              <p class="feedback-message">Никто пока не оценил вашу работу. Возвращайтесь через некоторое время</p>
+              <a href="#" class="btn btn-primary">Перейти на главную</a><a href="#"><span class="glyphicon glyphicon-repeat"></span> Проверить еще раз</a>
+            </div>
+
+            <div class="feedback feedback--some">
+              <p class="feedback-message">2 из 2 участников оценили вашу работу</p>
+              <div class="alert alert-success clearfix">
+                <div class="pull-left"><span class="feedback--user">Вадим Соломаха </span> поставил оценку: <span class="feedback--reviews"> Очень нравится</span></div>
+                <div class="pull-right count"> +3</div>
+              </div>
+              <div class="alert alert-success clearfix">
+                <div class="pull-left"><span class="feedback--user">Гурген Карапетян </span> поставил оценку: <span class="feedback--reviews"> Очень нравится</span></div>
+                <div class="pull-right count"> +2</div>
+              </div>
+              <a href="#" class="btn btn-primary">Перейти на главную</a><a href="#"><span class="glyphicon glyphicon-repeat"></span> Проверить еще раз</a>
+            </div>
+
+            <div class="feedback feedback--comments">
+              <p class="feedback-text">Возможно, к вашим работам в блоге были добавлены комментарии</p>
+              <a href="#" class="btn btn-primary">Перейти в блог смотреть комментарии</a>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.content .dashboard -->
+
+
+
+  </body>
+</html>

@@ -152,6 +152,20 @@ input[type="checkbox"] + label::before {
   border-radius: 0;
   border: none;
   margin-bottom: 0; }
+  .main-nav.navbar-default .navbar-nav > li > a:focus,
+  .main-nav.navbar-default .navbar-nav > li > a:hover,
+  .main-nav.navbar-default .navbar-brand:focus,
+  .main-nav.navbar-default .navbar-brand:hover,
+  .main-nav a:focus,
+  .main-nav a:hover,
+  .subheader.navbar-default .navbar-nav > li > a:focus,
+  .subheader.navbar-default .navbar-nav > li > a:hover,
+  .subheader.navbar-default .navbar-brand:focus,
+  .subheader.navbar-default .navbar-brand:hover,
+  .subheader a:focus,
+  .subheader a:hover {
+    text-decoration: none;
+    color: #fff; }
 
 .navbar .header__logo {
   color: #fff;
@@ -360,13 +374,34 @@ input[type="checkbox"] + label::before {
   .task--share .share .alert .link {
     display: block;
     margin-top: 10px; }
-  .task--share .share .glyphicon {
-    margin-right: 10px;
-    top: 2px; }
-  .task--share .share .btn {
-    margin-right: 20px; }
   .task--share .share img {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    margin-left: 40px; }
+
+.task--feedback .feedback {
+  margin: 40px 0; }
+  .task--feedback .feedback .alert {
+    font-weight: 100; }
+    .task--feedback .feedback .alert .count {
+      position: relative;
+      padding-left: 25px; }
+      .task--feedback .feedback .alert .count::after {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 18.57px;
+        top: 0;
+        left: 0;
+        background: url(../img/feather--green.png); }
+  .task--feedback .feedback--user, .task--feedback .feedback--reviews {
+    font-weight: 600; }
+
+.task--share .glyphicon, .task--feedback .glyphicon {
+  margin-right: 7px;
+  top: 2px; }
+
+.task--share .btn, .task--feedback .btn {
+  margin-right: 20px; }
 
 .task__steps {
   padding: 20px 20px; }
