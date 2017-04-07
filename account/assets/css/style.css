@@ -230,9 +230,6 @@ input[type="checkbox"] + label::before {
   .dashboard__time__system {
     text-align: right; }
 
-.dashboard .alert {
-  min-height: 65px; }
-
 .dashboard__message {
   margin: 60px 30px 70px; }
   .dashboard__message__title {
@@ -355,6 +352,21 @@ input[type="checkbox"] + label::before {
   font-size: 12px;
   color: rgba(157, 157, 157, 0.8);
   margin-top: 5px; }
+
+.task--share .share {
+  margin-bottom: 50px; }
+  .task--share .share--how .likes {
+    margin-top: 12px; }
+  .task--share .share .alert .link {
+    display: block;
+    margin-top: 10px; }
+  .task--share .share .glyphicon {
+    margin-right: 10px;
+    top: 2px; }
+  .task--share .share .btn {
+    margin-right: 20px; }
+  .task--share .share img {
+    margin-bottom: 30px; }
 
 .task__steps {
   padding: 20px 20px; }

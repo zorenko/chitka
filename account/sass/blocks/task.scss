@@ -5,6 +5,33 @@
     color: rgba($grey, .8);
     margin-top: 5px;
   }
+  &--share {
+    .share {
+      margin-bottom: 50px;
+      &--how {
+        .likes {
+          margin-top: 12px;
+        }
+      }
+      .alert {
+        .link {
+          display: block;
+          margin-top: 10px;
+
+        }
+      }
+      .glyphicon {
+        margin-right: 10px;
+        top: 2px;
+      }
+      .btn {
+        margin-right: 20px;
+      }
+      img {
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
 
 .task__steps {
