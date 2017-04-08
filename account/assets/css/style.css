@@ -105,6 +105,11 @@ body {
   .label-default:focus {
     background: rgba(188, 192, 193, 0.9); }
 
+.btn-fb {
+  background: #3C579E; }
+  .btn-fb:hover, .btn-fb:focus {
+    background: rgba(60, 87, 158, 0.9); }
+
 .btn-group > .btn {
   border: 1px solid transparent; }
   .btn-group > .btn-success {
@@ -530,3 +535,54 @@ input[type="checkbox"] + label::before {
   color: #9d9d9d; }
   .task__form--review .blocked .glyphicon {
     padding-right: 10px; }
+
+.social .alert {
+  font-weight: 100;
+  line-height: 1.4; }
+  .social .alert strong {
+    display: block; }
+
+.social__form {
+  margin: 60px 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.social__title, .social__list {
+  margin-bottom: 40px; }
+
+.social__title {
+  text-align: center;
+  padding: 0; }
+
+.social__list {
+  width: 50%;
+  font-size: 16px;
+  line-height: 1.5; }
+
+.social__input, .social__btn {
+  height: 45px;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 0;
+  border: 1px solid #3C579E;
+  margin: 0;
+  display: block;
+  float: left; }
+
+.social__input {
+  border-right: none;
+  min-width: 350px; }
+
+.social__btn:focus, .social__btn:hover {
+  border: 1px solid rgba(60, 87, 158, 0.9); }

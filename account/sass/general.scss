@@ -83,6 +83,12 @@ body {
     background: $default-hover;
   }
 }
+.btn-fb {
+  background: $fb;
+  &:hover, &:focus {
+    background: $fb-hover;
+  }
+}
 .btn-group>.btn {
   border: 1px solid transparent;
   &-success {
