@@ -1,4 +1,10 @@
 .task {
+  aside {
+    .btn {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
   .comment {
     display: block;
     font-size: 12px;
@@ -21,7 +27,6 @@
       }
       img {
         margin-bottom: 30px;
-        margin-left: 40px;
       }
     }
   }
@@ -135,8 +140,11 @@
     margin-bottom: 15px;
   }
   label[for="task__text"] {
-    width: 50%;
+    width: 20%;
     float: left;
+  }
+  label[for="task__text"].text-right {
+    width: 80%;
   }
   input, textarea {
     margin-bottom: 25px;
@@ -254,5 +262,47 @@
     .glyphicon {
       padding-right: 10px;
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .task {
+    .back-link {
+      display: none;
+    }
+  }
+  .task__user {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .task__form {
+    .btn {
+      margin-bottom: 10px;
+    }
+  }
+  .task--share .btn,
+  .task--feedback .btn {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .task__user {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .task__user__name {
+    width: auto;
+  }
+  .task__user__pic>img {
+    max-width: 50px;
+  }
+  .task__form {
+    padding-bottom: 20px;
+  }
+  .task__form .btn-group .btn {
+    width: 100%;
+    border-radius: $radius !important;
   }
 }

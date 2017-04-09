@@ -224,7 +224,7 @@ input[type="checkbox"] + label::before {
   .subheader__num {
     display: inline-block;
     vertical-align: middle;
-    padding-right: 10px;
+    padding-right: 5px;
     max-width: 60%;
     font-size: 30px;
     font-weight: 400; }
@@ -519,6 +519,10 @@ input[type="checkbox"] + label::before {
   .book .book-nav-link .title {
     margin-bottom: 10px; } }
 
+.task aside .btn {
+  width: 100%;
+  overflow: hidden; }
+
 .task .comment {
   display: block;
   font-size: 12px;
@@ -533,8 +537,7 @@ input[type="checkbox"] + label::before {
     display: block;
     margin-top: 10px; }
   .task--share .share img {
-    margin-bottom: 30px;
-    margin-left: 40px; }
+    margin-bottom: 30px; }
 
 .task--feedback .feedback {
   margin: 40px 0; }
@@ -613,8 +616,10 @@ input[type="checkbox"] + label::before {
   .task__form label {
     margin-bottom: 15px; }
   .task__form label[for="task__text"] {
-    width: 50%;
+    width: 20%;
     float: left; }
+  .task__form label[for="task__text"].text-right {
+    width: 80%; }
   .task__form input, .task__form textarea {
     margin-bottom: 25px; }
   .task__form .input-group {
@@ -688,6 +693,34 @@ input[type="checkbox"] + label::before {
   color: #9d9d9d; }
   .task__form--review .blocked .glyphicon {
     padding-right: 10px; }
+
+@media (max-width: 992px) {
+  .task .back-link {
+    display: none; }
+  .task__user {
+    margin-top: 20px; } }
+
+@media (max-width: 768px) {
+  .task__form .btn {
+    margin-bottom: 10px; }
+  .task--share .btn,
+  .task--feedback .btn {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    overflow: hidden; }
+  .task__user {
+    margin-top: 10px;
+    margin-bottom: 30px; }
+  .task__user__name {
+    width: auto; }
+  .task__user__pic > img {
+    max-width: 50px; }
+  .task__form {
+    padding-bottom: 20px; }
+  .task__form .btn-group .btn {
+    width: 100%;
+    border-radius: 4px !important; } }
 
 .social .alert {
   font-weight: 100;
