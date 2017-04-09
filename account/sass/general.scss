@@ -7,12 +7,7 @@ body {
   padding-top: 70px;
   padding-bottom: 90px;
 }
-.content.dashboard,
-.content.book-page {
-  >.container {
-    width: 800px;
-  }
-}
+
 
 .btn,
 .navbar-default .navbar-nav > li > a.btn {
@@ -140,4 +135,38 @@ body {
 
 input[type="checkbox"] + label::before {
   background: $white;
+}
+
+@media (min-width: 992px) {
+  .content.dashboard,
+  .content.book-page {
+    >.container {
+      width: 800px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .alert {
+    font-weight: bold;
+    &__text {
+      margin-top: 0;
+      width: 100%;
+    }
+    &__btn {
+      margin-top: 10px;
+      float: left;
+    }
+  }
+  .well {
+    padding: 10px;
+  }
+  .label,
+  .book .book-nav-link .label {
+    padding: 2px 4px;
+    font-size: 10px;
+  }
 }

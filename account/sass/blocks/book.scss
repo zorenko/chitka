@@ -48,3 +48,61 @@
 .book-nav-week {
   padding: 10px 0px;
 }
+
+@media (max-width: 768px) {
+  .book  {
+    .media {
+      margin-bottom: 30px;
+    }
+    .media .h2 {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .media .book-about {
+      display: block;
+      padding-bottom: 15px;
+    }
+    &__download {
+      float: left !important;
+      text-align: left;
+      margin-top: 15px;
+    }
+    &-progress {
+      .status-item .status-num {
+        font-size: 16px;
+        line-height: 1;
+        font-weight: normal;
+        padding-right: 6px;
+      }
+    }
+  }
+  .book .book-nav-link .label {
+    // padding: 3px 4px;
+    // font-size: 12px;
+  }
+  .book .book-nav-link .pull-left {
+    width: 100%;
+    .label {
+      margin-bottom: 5px;
+    }
+  }
+  .book .book-nav-link .pull-right {
+    float: left !important;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .book-nav-week {
+    padding: 5px 0px;
+    .label {
+      margin-bottom: 5px;
+    }
+  }
+  .book .book-nav-link .title {
+    margin-bottom: 10px;
+  }
+  .book .book-nav-link .book-nav-tasks {
+    
+  }
+}
