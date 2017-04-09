@@ -519,10 +519,6 @@ input[type="checkbox"] + label::before {
   .book .book-nav-link .title {
     margin-bottom: 10px; } }
 
-.task aside .btn {
-  width: 100%;
-  overflow: hidden; }
-
 .task .comment {
   display: block;
   font-size: 12px;
