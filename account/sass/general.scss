@@ -33,6 +33,11 @@ body {
     pointer-events: none;
   }
 }
+.btn-clear,
+.btn-clear:hover,
+.btn-clear:focus {
+  color: $primary;
+}
 .btn-primary,
 .navbar-default .navbar-nav > li > a.btn-primary,
 .nav > li > a.btn-primary,
