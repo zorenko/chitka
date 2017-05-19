@@ -1,3 +1,7 @@
+# Overview
+
+Total reading — is a project that helps people to read more and with more benefits. It has inner interfaces where clients write their reading notes and a website with clients' rating and their public blogs.
+
 # Preview
 
 website/
