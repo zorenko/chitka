@@ -356,7 +356,7 @@ input[type="checkbox"] + label::before {
 
 .dashboard__results__title {
   margin: 0;
-  margin-bottom: 35px; }
+  margin-bottom: 30px; }
 
 .dashboard__results__current {
   margin-bottom: 60px; }
@@ -382,7 +382,7 @@ input[type="checkbox"] + label::before {
     font-size: 16px; }
 
 .dashboard__results table > tbody > tr > td {
-  width: 15%;
+  width: 10%;
   padding: 25px 0;
   color: #9d9d9d; }
 
@@ -396,11 +396,22 @@ input[type="checkbox"] + label::before {
   font-weight: bold; }
 
 .dashboard__results table > tbody > tr > td.task {
-  width: 35%;
-  font-weight: bold; }
+  width: 35%; }
+  .dashboard__results table > tbody > tr > td.task a {
+    color: #27384A;
+    text-decoration: underline; }
+    .dashboard__results table > tbody > tr > td.task a:hover, .dashboard__results table > tbody > tr > td.task a:active, .dashboard__results table > tbody > tr > td.task afocus {
+      color: rgba(39, 56, 74, 0.9); }
 
 .dashboard__results table > tbody > tr > td.status {
   text-align: right; }
+
+.dashboard__results table > tbody > tr > td.reviews,
+.dashboard__results table > tbody > tr > td.likes {
+  color: #27384A; }
+  .dashboard__results table > tbody > tr > td.reviews .comment,
+  .dashboard__results table > tbody > tr > td.likes .comment {
+    color: #9d9d9d; }
 
 .dashboard__results table > tbody > tr > td.reviews {
   position: relative;
@@ -412,7 +423,12 @@ input[type="checkbox"] + label::before {
     height: 19px;
     top: 25px;
     left: 0;
-    background: url("../img/feather.png"); }
+    background: url("../img/feather.svg");
+    background-size: 16px 19px; }
+
+.dashboard__results table > tbody > tr > td.likes {
+  text-align: right;
+  padding-right: 30px; }
 
 @media (max-width: 768px) {
   .dashboard__time__system {
@@ -467,7 +483,9 @@ input[type="checkbox"] + label::before {
       top: 10px;
       left: -18px; }
   .dashboard__results table > tbody > tr > td > .glyphicon {
-    margin-right: 2px; } }
+    margin-right: 2px; }
+  .dashboard__results table > tbody > tr > td.likes {
+    padding-right: 0px; } }
 
 .book {
   padding-top: 0;

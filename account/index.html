@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Тотальная читка</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/6df67120f9.js" async></script>
+  <script src="assets/js/custom.min.js" async></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav navbar navbar-default main-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand text-uppercase header__logo" href="#">#Читка</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div><!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-center ">
+            <li><a href="#">Задания</a></li>
+            <li><a href="#">Рейтинг</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Мой блог</a></li>
+            <li><a href="#">Группа Facebook</a></li>
+            <li><a href="#">Помощь</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Имя пользователя<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/me">Профиль</a></li>
+                <li><a href="/auth/logout" data-method="post">Выйти</a></li>
+              </ul>
+            </li><!-- /.dropdown -->
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.main-nav -->
+    <div class="subheader">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4 subheader__status">
+            <ul class="nav navbar-nav navbar-left">
+              <li>
+                <a href="#" class="btn btn-success subheader__day"><span><span class="glyphicon glyphicon-ok"></span>Конспект дня сдан</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-8 pull-right">
+            <div class="row">
+              <div class="col-sm-2 col-lg-offset-1">
+                <a href="#" class="subheader__item">
+                  <span class="subheader__num">89</span>
+                  <span class="subheader__text">Шеров из 100</span>
+                </a>
+              </div>
+              <div class="col-sm-2">
+                <a href="#" class="subheader__item">
+                  <span class="subheader__num">1</span>
+                  <span class="subheader__text">Жизнь осталась</span>
+                </a>
+              </div>
+              <div class="col-sm-2">
+                <a href="#" class="subheader__item subheader__item--standart">
+                  <span class="subheader__text">Стандартный читатель</span>
+                </a>
+              </div>
+              <div class="col-sm-5">
+                <a class="subheader__item subheader__item--fund" href="http://chitau.org/#rec10324795" target="_blank">
+                  <span class="subheader__num">1 230 000 Р</span>
+                  <span class="subheader__text">Призовой фонд</span>
+                  <div class="subheader__help"><span class="glyphicon glyphicon-question-sign"></span></div>
+                </a>
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.col-xs-9 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.subheader -->
+  </header>
+  <main class="book-page content">
+    <div class="container">
+      <div class="book">
+        <div class="media">
+          <div class="row">
+            <div class="media-left col-xs-2">
+              <img src="assets/img/book-1.png" width="77" height="109" alt="" class="pull-left">
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              <h2 class="h2">Будь лучшей версией себя</h2>
+              <p class="book-about"><span class="book-author">Дэн Вальдшмидтт</span><span class="muted">300 страниц, 9 глав</span></p>
+              <div class="clearfix">
+                <div class="pull-left">
+                  <div class="muted flag-icon">Прочитать 0 – 50%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 ">
+              <a href="#" class="btn btn-primary pull-right book__download"><span class="glyphicon glyphicon-save"></span> Скачать книгу</a>
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.media -->
+
+        <div id="booknav" class="book-nav-wrap">
+          <div class="book-nav">
+            <div class="book-nav-link book-nav-segmented clearfix">
+              <div class="book-nav-top">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 pull-left title">Ежедневный конспект <span class="book-nav-date muted">Суббота, 29 декабря</span></div>
+                  <div class="col-xs-12 col-sm-3 pull-right"><span class="label label-default pull-right">Сегодня не сдан</span></div>
+                </div>
+              </div>
+              <div class="book-nav-bottom">
+                <div class="row">
+                  <div class="col-xs-6 pull-left">
+                    <span class="label label-success">Пн</span>
+                    <span class="label label-success">Вт</span>
+                    <span class="label label-danger">Ср</span>
+                    <span class="label label-success">Чт</span>
+                    <span class="label label-success">Пт</span>
+                    <span class="label label-process">Сб</span>
+                    <span class="label label-default">Вс</span>
+                  </div>
+                  <div class="col-xs-4 pull-right">
+                    <a href="" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-pencil"></span> Написать конспект</a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.book-nav-link -->
+          </div><!-- /.book-nav -->
+        </div><!-- /.booknav -->
+      </div><!-- /.book -->
+
+      <div class="dashboard__message__text">
+        <p>Поздравляем тех, кто прошел прошлые 7 дней и особенно тех, кто прочитал всю книгу за неделю!</p>
+        <p>Впереди очередные 200 страниц, вы узнаете о том, как управлять своей энергией, не выгорать и как полезно провести время, если вы не можете уснуть. Также вы получите несколько практических упражнений, которые помогут вам жить лучше и читать больше.</p>
+      </div>
+
+      <div class="dashboard__results well">
+        <h2 class="dashboard__results__title">Результаты</h2>
+          <table class="table">
+            <tr>
+              <td class="day">День 1</td>
+              <td class="task"><a href="">Уроки переломного момента</a></td>
+              <td class="reviews">6 <span class="comment">(3+3)</span></td>
+              <td class="likes"><span class="glyphicon glyphicon-thumbs-up"></span>6</td>
+            </tr>
+            <tr>
+              <td class="day">День 2</td>
+              <td class="task"><a href="">Направляйте усилия и молитесь</a></td>
+              <td class="reviews">3 <span class="comment">(2+1)</span></td>
+              <td class="likes"><span class="glyphicon glyphicon-thumbs-up"></span>7</td>
+            </tr>
+            <tr>
+              <td class="day">День 1</td>
+              <td class="task"><a href="">Уроки переломного момента</a></td>
+              <td class="reviews">6 <span class="comment">(3+3)</span></td>
+              <td class="likes"><span class="glyphicon glyphicon-thumbs-up"></span>6</td>
+            </tr>
+          </table>
+      </div><!-- /.dashboard__results -->
+
+    </div><!-- /.container -->
+  </main>
+</body>
+</html>
