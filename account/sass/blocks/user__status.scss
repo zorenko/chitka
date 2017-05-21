@@ -1,0 +1,81 @@
+.user__status {
+  width: 750px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  .alert {
+    color: #fff;
+    border: none;
+    &-warning {
+      background-color: #fcb860;
+    }
+    &-success {
+      background-color: #87ce50;
+    }
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    padding-top: 300px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 260px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: $grey;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 900;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 70%%;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 16px;
+
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+    }
+
+    .btn {
+      padding: 12px 20px;
+    }
+  }
+
+  &--out {
+    .panel {
+      &::after {
+        background-image: url("../img/user-out.jpg");
+      }
+    }
+  }
+  &--wait {
+    .panel {
+      &::after {
+        background-image: url("../img/user-wait.jpg");
+      }
+    }
+  }
+}

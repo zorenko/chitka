@@ -863,3 +863,65 @@ input[type="checkbox"] + label::before {
   .social__btn {
     margin-top: 10px;
     padding: 10px; } }
+
+.user__status {
+  width: 750px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+  .user__status .alert {
+    color: #fff;
+    border: none; }
+    .user__status .alert-warning {
+      background-color: #fcb860; }
+    .user__status .alert-success {
+      background-color: #87ce50; }
+  .user__status .panel {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    padding-top: 300px;
+    position: relative; }
+    .user__status .panel::after {
+      position: absolute;
+      content: "";
+      height: 260px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #9d9d9d;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .user__status .panel h1 {
+      font-size: 48px;
+      font-weight: 900;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 20px; }
+    .user__status .panel p {
+      max-width: 60%;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 16px; }
+      .user__status .panel p:last-of-type {
+        margin-bottom: 30px; }
+    .user__status .panel .btn {
+      padding: 12px 20px; }
+  .user__status--out .panel::after {
+    background-image: url("../img/user-out.jpg"); }
+  .user__status--wait .panel::after {
+    background-image: url("../img/user-wait.jpg"); }
