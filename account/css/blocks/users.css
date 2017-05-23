@@ -1,0 +1,9 @@
+.users-table .label {
+  display: block;
+  float: left;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-right: 5px;
+  border-radius: 50%;
+  vertical-align: top; }

@@ -16,14 +16,27 @@ body {
   border-radius: $radius;
   padding: $padding;
   font-weight: normal;
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     color: #fff;
     border: none;
   }
+
   &>.glyphicon {
     padding-right: 10px;
   }
 }
+
+.btn-link {
+  color: $primary;
+
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+}
+
 .label {
   border-radius: $radius;
   padding: $padding;

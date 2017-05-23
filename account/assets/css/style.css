@@ -23,6 +23,11 @@ body {
   .navbar-default .navbar-nav > li > a.btn > .glyphicon {
     padding-right: 10px; }
 
+.btn-link {
+  color: #27384A; }
+  .btn-link:hover, .btn-link:focus {
+    color: #27384A; }
+
 .label {
   border-radius: 4px;
   padding: 7px 12px;
@@ -927,3 +932,52 @@ input[type="checkbox"] + label::before {
     background-image: url("../img/user-out.jpg"); }
   .user__status--wait .panel::after {
     background-image: url("../img/user-wait.jpg"); }
+
+.users__row {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd; }
+  .users__row:hover {
+    background: rgba(255, 255, 255, 0.4); }
+  .users__row:last-child {
+    border: none; }
+  .users__row label {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0; }
+  .users__row input[type="checkbox"] + label::before {
+    top: 4px; }
+  .users__row .label-default {
+    background: #d2d6da;
+    color: #27384a; }
+
+.users__name {
+  display: block; }
+
+.users__contact {
+  color: #9d9d9d;
+  font-size: 12px; }
+
+.users__tasks .task {
+  display: inline-block;
+  float: left;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  margin-right: 5px;
+  border-radius: 50%;
+  vertical-align: top; }
+  .users__tasks .task--success {
+    background: #87CE50; }
+  .users__tasks .task--default {
+    background: #9d9d9d; }
+  .users__tasks .task--warning {
+    background: #F6CB23; }
+  .users__tasks .task--danger {
+    background: #FB612C; }
