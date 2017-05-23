@@ -956,9 +956,6 @@ input[type="checkbox"] + label::before {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
-  .users__row .label-default {
-    background: #d2d6da;
-    color: #27384a; }
 
 .users__name {
   display: block; }
@@ -966,6 +963,12 @@ input[type="checkbox"] + label::before {
 .users__contact {
   color: #9d9d9d;
   font-size: 12px; }
+
+.users__status {
+  min-width: 100px; }
+  .users__status .label-default {
+    background: #d2d6da;
+    color: #27384a; }
 
 .users__tasks .task {
   display: inline-block;

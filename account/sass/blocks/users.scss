@@ -25,10 +25,6 @@
       transform: translateY(-50%);
     }
 
-    .label-default {
-      background: #d2d6da;
-      color: #27384a;
-    }
   }
 
   &__name {
@@ -38,6 +34,15 @@
   &__contact {
     color: $grey;
     font-size: 12px;
+  }
+
+  &__status {
+    min-width: 100px;
+
+    .label-default {
+      background: #d2d6da;
+      color: #27384a;
+    }
   }
 
   &__tasks {
