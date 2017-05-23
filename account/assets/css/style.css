@@ -933,6 +933,17 @@ input[type="checkbox"] + label::before {
   .user__status--wait .panel::after {
     background-image: url("../img/user-wait.jpg"); }
 
+.users-head {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .users-head .label {
+    margin-left: 15px;
+    padding: 5px 8px; }
+
 .users__row {
   border-bottom: 1px solid #ddd; }
   .users__row:hover {

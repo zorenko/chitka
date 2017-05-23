@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1200">
+    <title>Тотальная читка</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+    <script src="https://use.fontawesome.com/6df67120f9.js"></script>
+  </head>
+  <body>
+    <header class="header header-admin">
+      <nav class="navbar navbar-inverse header-top">
+        <div class="container-non-responsive">
+          <div class="navbar-header clearfix"><a href="/" class="header-logo-link pull-left">ТЧК</a>
+            <div class="header-statistic pull-left"><span class="header-statistic-active">1460 активных участников</span><a href="#" class="header-statistic-check">На проверке<span class="badge badge-info">356</span></a></div>
+            <ul class="nav navbar-nav dropdown pull-right user-menu">
+              <li><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Глеб Кушедов <span class="arrow"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Редактировать</a></li>
+                  <li><a href="#">Выйти</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul id="navbar" class="nav navbar-nav pull-right">
+              <li><a href="#">Книги</a></li>
+              <li><a href="#">Задания</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Рейтинг</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="users admin-page settings">
+      <div class="container-non-responsive">
+        <div class="users-head settings__section clearfix">
+          <h1 class="users-title pull-left">Настройки</h1>
+        </div>
+
+        <form class="settings__section settings__status" action="" method="post">
+          <div class="row">
+            <div class="col-xs-12">
+              <label for="">Статус проекта</label>
+              <select name="" id="">
+                <option value="">Проект идет</option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+              <label for="">Группа в Facebook</label>
+              <input type="text" name="" value="" id="">
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+              <label for="">Скачивание книг</label>
+              <input type="text" name="" value="" id="">
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+              <label for="">Призовой фонд (цифра)</label>
+              <input type="text" name="" value="" id="" placeholder="500 000">
+            </div>
+
+            <div class="col-xs-12">
+              <button class="btn btn-primary">Сохранить</button>
+            </div>
+          </div> <!-- .row -->
+        </form> <!-- .settings__status -->
+
+        <form class="settings__section settings__books" action="" method="post">
+          <h2 class="users-title pull-left">Книги</h2>
+
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Название</th>
+                <th>Автор</th>
+                <th>Страниц</th>
+                <th>Обложка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><input type="text" name="" value="" id="" placeholder="Мозг. Инструкция по применению"></td>
+                <td><input type="text" name="" value="" id="" placeholder="Девид Рок"></td>
+                <td><input type="text" name="" value="" id="" placeholder="340"></td>
+                <td><input type="text" name="" value="" id="" placeholder="https://..."></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><input type="text" name="" value="" id="" placeholder="Мозг. Инструкция по применению"></td>
+                <td><input type="text" name="" value="" id="" placeholder="Девид Рок"></td>
+                <td><input type="text" name="" value="" id="" placeholder="340"></td>
+                <td><input type="text" name="" value="" id="" placeholder="https://..."></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><input type="text" name="" value="" id="" placeholder="Мозг. Инструкция по применению"></td>
+                <td><input type="text" name="" value="" id="" placeholder="Девид Рок"></td>
+                <td><input type="text" name="" value="" id="" placeholder="340"></td>
+                <td><input type="text" name="" value="" id="" placeholder="https://..."></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button class="btn btn-primary">Сохранить</button>
+        </form>
+
+        <form class="settings__section settings__tasks" action="" method="post">
+          <h2 class="users-title pull-left">Дни и задания</h2>
+
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Дата</th>
+                <th>Книга</th>
+                <th>Плашка</th>
+                <th>Рейтинг</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><input type="date" name="" value="" id=""></td>
+                <td>
+                  <select name="" id="">
+                    <option value="">Проект идет</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </td>
+                <td>
+                  <button class="btn btn-link">
+                    <span class="glyphicon glyphicon-picture"></span>
+                    Загрузить
+                  </button>
+                </td>
+                <td>
+                  <input type="checkbox" name="" value="" id="rating">
+                  <label for="rating"></label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button class="btn btn-primary">Сохранить</button>
+        </form>
+
+        <form class="settings__section settings__notifications" action="" method="post">
+          <h2 class="users-title pull-left">Уведомления</h2>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <label for="">Текст письма победителю</label>
+              <textarea name="name" rows="8" cols="80"></textarea>
+            </div>
+            <div class="col-xs-12">
+              <label for="">Ежедневный e-mail</label>
+              <textarea name="name" rows="5" cols="80"></textarea>
+            </div>
+            <div class="col-xs-12">
+              <label for="">Ежедневный push</label>
+              <textarea name="name" rows="5" cols="80"></textarea>
+            </div>
+            <div class="col-xs-12">
+              <label for="">Ежедневный sms</label>
+              <textarea name="name" rows="5" cols="80"></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn-primary">Сохранить</button>
+        </form>
+
+      </div><!-- .container-non-responsive -->
+    </main>
+  </body>
+</html>
