@@ -1,7 +1,7 @@
 .users {
 
   &__row {
-    padding: 20px 0;
+
     border-bottom: 1px solid #ddd;
 
     &:hover {
@@ -17,10 +17,12 @@
       justify-content: space-between;
       align-items: center;
       margin: 0;
+      padding: 20px 0;
     }
 
     input[type="checkbox"] + label::before {
-      top: 4px;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     .label-default {
