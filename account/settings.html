@@ -38,21 +38,26 @@
       </nav>
     </header>
 
-    <main class="users admin-page settings">
+    <main class="users admin-page settings clearfix">
       <div class="container-non-responsive">
-        <div class="users-head settings__section clearfix">
+        <div class="users-head settings__section ">
           <h1 class="users-title pull-left">Настройки</h1>
         </div>
 
         <form class="settings__section settings__status" action="" method="post">
           <div class="row">
             <div class="col-xs-12">
-              <label for="">Статус проекта</label>
-              <select name="" id="">
-                <option value="">Проект идет</option>
-                <option value=""></option>
-                <option value=""></option>
-              </select>
+              <div class="row">
+                <div class="col-xs-12 col-md-4">
+                  <label for="">Статус проекта</label>
+                  <select name="" id="">
+                    <option value="">Проект идет</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+
             </div>
 
             <div class="col-xs-12 col-md-4">
@@ -82,34 +87,34 @@
           <table class="table table-hover">
             <thead>
               <tr>
-                <th>#</th>
-                <th>Название</th>
-                <th>Автор</th>
-                <th>Страниц</th>
-                <th>Обложка</th>
+                <th class="no">#</th>
+                <th class="title">Название</th>
+                <th class="author">Автор</th>
+                <th class="pages">Страниц</th>
+                <th class="cover">Обложка</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>1</td>
-                <td><input type="text" name="" value="" id="" placeholder="Мозг. Инструкция по применению"></td>
-                <td><input type="text" name="" value="" id="" placeholder="Девид Рок"></td>
-                <td><input type="text" name="" value="" id="" placeholder="340"></td>
-                <td><input type="text" name="" value="" id="" placeholder="https://..."></td>
+                <td class="no">1</td>
+                <td class="title"><input type="text" name="" value="" id="" placeholder="Мозг. Инструкция по применению"></td>
+                <td class="author"><input type="text" name="" value="" id="" placeholder="Девид Рок"></td>
+                <td class="pages"><input type="text" name="" value="" id="" placeholder="340"></td>
+                <td class="cover"><input type="text" name="" value="" id="" placeholder="https://..."></td>
               </tr>
               <tr>
-                <td>2</td>
-                <td><input type="text" name="" value="" id="" placeholder="Мозг. Инструкция по применению"></td>
-                <td><input type="text" name="" value="" id="" placeholder="Девид Рок"></td>
-                <td><input type="text" name="" value="" id="" placeholder="340"></td>
-                <td><input type="text" name="" value="" id="" placeholder="https://..."></td>
+                <td class="no">2</td>
+                <td class="title"><input type="text" name="" value="" id="" placeholder="Мозг. Инструкция по применению"></td>
+                <td class="author"><input type="text" name="" value="" id="" placeholder="Девид Рок"></td>
+                <td class="pages"><input type="text" name="" value="" id="" placeholder="340"></td>
+                <td class="cover"><input type="text" name="" value="" id="" placeholder="https://..."></td>
               </tr>
               <tr>
-                <td>3</td>
-                <td><input type="text" name="" value="" id="" placeholder="Мозг. Инструкция по применению"></td>
-                <td><input type="text" name="" value="" id="" placeholder="Девид Рок"></td>
-                <td><input type="text" name="" value="" id="" placeholder="340"></td>
-                <td><input type="text" name="" value="" id="" placeholder="https://..."></td>
+                <td class="no">3</td>
+                <td class="title"><input type="text" name="" value="" id="" placeholder="Мозг. Инструкция по применению"></td>
+                <td class="author"><input type="text" name="" value="" id="" placeholder="Девид Рок"></td>
+                <td class="pages"><input type="text" name="" value="" id="" placeholder="340"></td>
+                <td class="cover"><input type="text" name="" value="" id="" placeholder="https://..."></td>
               </tr>
             </tbody>
           </table>
@@ -123,31 +128,53 @@
           <table class="table table-hover">
             <thead>
               <tr>
-                <th>#</th>
-                <th>Дата</th>
-                <th>Книга</th>
-                <th>Плашка</th>
-                <th>Рейтинг</th>
+                <th class="no">#</th>
+                <th class="date">Дата</th>
+                <th class="book">Книга</th>
+                <th class="upload">Плашка</th>
+                <th class="rating">Рейтинг</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>1</td>
-                <td><input type="date" name="" value="" id=""></td>
-                <td>
+                <td class="no">1</td>
+                <td class="date"><input type="date" name="" value="" id=""></td>
+                <td class="book">
                   <select name="" id="">
                     <option value="">Проект идет</option>
                     <option value=""></option>
                     <option value=""></option>
                   </select>
                 </td>
-                <td>
+                <td class="upload">
                   <button class="btn btn-link">
                     <span class="glyphicon glyphicon-picture"></span>
                     Загрузить
                   </button>
                 </td>
-                <td>
+                <td class="rating">
+                  <input type="checkbox" name="" value="" id="rating">
+                  <label for="rating"></label>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="no">1</td>
+                <td class="date"><input type="date" name="" value="" id=""></td>
+                <td class="book">
+                  <select name="" id="">
+                    <option value="">Проект идет</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </td>
+                <td class="upload">
+                  <button class="btn btn-link">
+                    <span class="glyphicon glyphicon-picture"></span>
+                    Загрузить
+                  </button>
+                </td>
+                <td class="rating">
                   <input type="checkbox" name="" value="" id="rating">
                   <label for="rating"></label>
                 </td>

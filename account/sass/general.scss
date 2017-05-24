@@ -155,6 +155,11 @@ input[type="checkbox"] + label::before {
   background: $white;
 }
 
+.admin-page {
+  min-height: auto;
+  min-width: auto;
+}
+
 @media (min-width: 992px) {
   .content.dashboard,
   .content.book-page {
