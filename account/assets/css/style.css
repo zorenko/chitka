@@ -3,6 +3,9 @@ body {
   background: #fbfbfb;
   font-family: "Roboto", Roboto, Arial, sans-serif; }
 
+body.admin {
+  background: #f6f8f9; }
+
 .content {
   padding-top: 70px;
   padding-bottom: 90px; }
@@ -159,7 +162,8 @@ input[type="checkbox"] + label::before {
 
 .admin-page {
   min-height: auto;
-  min-width: auto; }
+  min-width: auto;
+  background: transparent; }
 
 @media (min-width: 992px) {
   .content.dashboard > .container,
@@ -944,9 +948,20 @@ input[type="checkbox"] + label::before {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+  .users-head--tasks {
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
+    .users-head--tasks .comment {
+      margin-left: 20px;
+      color: #9d9d9d; }
   .users-head .label {
     margin-left: 15px;
     padding: 5px 8px; }
+  .users-head .users-title.pull-left {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
 
 .users__row {
   border-bottom: 1px solid #ddd; }
@@ -1003,14 +1018,51 @@ input[type="checkbox"] + label::before {
   .users__tasks .task--danger {
     background: #FB612C; }
 
+.users__actions {
+  padding: 10px 0 40px; }
+  .users__actions .btn-group > .btn {
+    border: none; }
+
+.users .table .day,
+.users .table .time {
+  width: 10%; }
+
+.users .table .time {
+  color: #9d9d9d; }
+
+.users .table .reviews {
+  padding-left: 0; }
+
+.users .table thead th {
+  font-size: 13px; }
+
+.users .table thead .time {
+  font-size: 0; }
+
+.users .table tbody .reviews {
+  position: relative;
+  padding-left: 25px; }
+  .users .table tbody .reviews::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 19px;
+    top: 13px;
+    left: 0;
+    background: url(../img/feather.svg);
+    background-size: 16px 19px; }
+  .users .table tbody .reviews .comment {
+    color: #9d9d9d; }
+
 .settings {
   padding-bottom: 50px; }
   .settings .users-title {
     padding-bottom: 30px;
     font-size: 18px; }
   .settings .users-head {
-    padding: 50px 0 0; }
+    padding: 50px 0 30px; }
     .settings .users-head .users-title {
+      padding: 0;
       font-size: 24px; }
   .settings__section {
     padding: 40px 0;
@@ -1053,8 +1105,9 @@ input[type="checkbox"] + label::before {
   .settings .table .no {
     width: 5%; }
   .settings .table .pages,
-  .settings .table .date,
-  .settings .table .upload {
+  .settings .table .date {
     width: 10%; }
+  .settings .table .upload {
+    width: 15%; }
   .settings__notifications label {
     color: #9d9d9d; }

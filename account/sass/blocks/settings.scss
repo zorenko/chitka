@@ -8,8 +8,9 @@
   }
 
   .users-head {
-    padding: 50px 0 0;
+    padding: 50px 0 30px;
     .users-title {
+      padding: 0;
       font-size: 24px;
     }
   }
@@ -76,9 +77,12 @@
     }
 
     .pages,
-    .date,
-    .upload {
+    .date {
       width: 10%;
+    }
+
+    .upload {
+      width: 15%;
     }
   }
 

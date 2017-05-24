@@ -13,7 +13,7 @@
     <script src="assets/js/custom.min.js"></script>
     <script src="https://use.fontawesome.com/6df67120f9.js"></script>
   </head>
-  <body>
+  <body class="admin">
     <header class="header header-admin">
       <nav class="navbar navbar-inverse header-top">
         <div class="container-non-responsive">
@@ -38,7 +38,7 @@
       </nav>
     </header>
 
-    <main class="users admin-page">
+    <main class="users admin-page settings">
       <div class="container-non-responsive">
 
         <div class="users-head clearfix">
@@ -46,7 +46,7 @@
           <span class="label label-default">модератор</span>
         </div>
 
-        <div class="">
+        <div class="users__actions">
           <div class="btn-group">
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Действия <span class="caret"></span>
@@ -104,28 +104,44 @@
           </div> <!-- .row -->
         </form>
 
-        <div class="users-head clearfix">
+        <div class="users-head clearfix users-head--tasks">
           <h1 class="users-title pull-left">Работы</h1>
-          <span class="">Переход в блог по клику</span>
+          <span class="comment">Переход в блог по клику</span>
         </div>
 
         <table class="table table-hover">
           <thead>
             <tr>
-              <th>День</th>
-              <th>Время</th>
-              <th>Название</th>
-              <th>Оценки</th>
-              <th>Шеры</th>
+              <th class="day">День</th>
+              <th class="time">Время</th>
+              <th class="title">Название</th>
+              <th class="reviews">Оценки</th>
+              <th class="likes">Шеры</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>День 1</td>
-              <td>16:32</td>
-              <td><a href="#">Уроки переломного момента</a></td>
-              <td>5 (3+3)</td>
-              <td>3</td>
+              <td class="day">День 1</td>
+              <td class="time">16:32</td>
+              <td class="title"><a href="#">Уроки переломного момента</a></td>
+              <td class="reviews">5 <span class="comment">(3+3)</span></td>
+              <td class="likes"><span class="glyphicon glyphicon-thumbs-up"></span> 3</td>
+            </tr>
+
+            <tr>
+              <td class="day">День 1</td>
+              <td class="time">16:32</td>
+              <td class="title"><a href="#">Уроки переломного момента</a></td>
+              <td class="reviews">5 <span class="comment">(3+3)</span></td>
+              <td class="likes"><span class="glyphicon glyphicon-thumbs-up"></span> 3</td>
+            </tr>
+
+            <tr>
+              <td class="day">День 1</td>
+              <td class="time">16:32</td>
+              <td class="title"><a href="#">Уроки переломного момента</a></td>
+              <td class="reviews">5 <span class="comment">(3+3)</span></td>
+              <td class="likes"><span class="glyphicon glyphicon-thumbs-up"></span> 3</td>
             </tr>
           </tbody>
         </table>

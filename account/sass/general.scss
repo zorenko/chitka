@@ -3,6 +3,9 @@ body {
   background: $body;
   font-family: "Roboto", Roboto, Arial, sans-serif;
 }
+body.admin {
+  background: $body-admin;
+}
 .content {
   padding-top: 70px;
   padding-bottom: 90px;
@@ -158,6 +161,7 @@ input[type="checkbox"] + label::before {
 .admin-page {
   min-height: auto;
   min-width: auto;
+  background: transparent;
 }
 
 @media (min-width: 992px) {

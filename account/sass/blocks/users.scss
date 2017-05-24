@@ -4,9 +4,22 @@
     display: flex;
     align-items: center;
 
+    &--tasks {
+      align-items: baseline;
+
+      .comment {
+        margin-left: 20px;
+        color: $grey;
+      }
+    }
+
     .label {
       margin-left: 15px;
       padding: 5px 8px;
+    }
+
+    .users-title.pull-left {
+      flex-grow: 1;
     }
   }
 
@@ -81,4 +94,57 @@
     }
   }
 
+  &__actions {
+    padding: 10px 0 40px;
+
+    .btn-group > .btn {
+      border: none;
+    }
+  }
+
+  .table {
+    .day,
+    .time {
+      width: 10%;
+    }
+
+    .time {
+      color: $grey;
+    }
+
+    .reviews {
+      padding-left: 0;
+    }
+
+    thead {
+      th {
+        font-size: 13px;
+      }
+      .time {
+        font-size: 0;
+      }
+    }
+
+    tbody {
+      .reviews {
+        position: relative;
+        padding-left: 25px;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 16px;
+          height: 19px;
+          top: 13px;
+          left: 0;
+          background: url(../img/feather.svg);
+          background-size: 16px 19px;
+        }
+
+        .comment {
+          color: $grey;
+        }
+      }
+    }
+  }
 }
