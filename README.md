@@ -19,7 +19,7 @@ account/
 - [task-share.html](https://zorenko.github.io/chitka/account/task-share.html)
 - [task-feedback.html](https://zorenko.github.io/chitka/account/task-feedback.html)
 - [social.html](https://zorenko.github.io/chitka/account/social.html)
-- [user_status.html](https://zorenko.github.io/chitka/account/user_status.html)
+- [status.html](https://zorenko.github.io/chitka/account/status.html)
 
 admin/
 - [settings.html](https://zorenko.github.io/chitka/account/settings.html)
