@@ -10,6 +10,7 @@ website/
 - [readers.html](https://zorenko.github.io/chitka/website/readers.html)
 
 account/
+- [index.html](https://zorenko.github.io/chitka/account/dashboard.html)
 - [dashboard.html](https://zorenko.github.io/chitka/account/dashboard.html)
 - [book.html](https://zorenko.github.io/chitka/account/book.html)
 - [task-complete.html](https://zorenko.github.io/chitka/account/task-complete.html)
@@ -18,3 +19,9 @@ account/
 - [task-share.html](https://zorenko.github.io/chitka/account/task-share.html)
 - [task-feedback.html](https://zorenko.github.io/chitka/account/task-feedback.html)
 - [social.html](https://zorenko.github.io/chitka/account/social.html)
+- [user_status.html](https://zorenko.github.io/chitka/account/user_status.html)
+
+admin/
+- [settings.html](https://zorenko.github.io/chitka/account/settings.html)
+- [users.html](https://zorenko.github.io/chitka/account/users.html)
+- [user.html](https://zorenko.github.io/chitka/account/user.html)
