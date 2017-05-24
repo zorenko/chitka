@@ -10,7 +10,7 @@ website/
 - [readers.html](https://zorenko.github.io/chitka/website/readers.html)
 
 account/
-- [index.html](https://zorenko.github.io/chitka/account/dashboard.html)
+- [index.html](https://zorenko.github.io/chitka/account/index.html)
 - [dashboard.html](https://zorenko.github.io/chitka/account/dashboard.html)
 - [book.html](https://zorenko.github.io/chitka/account/book.html)
 - [task-complete.html](https://zorenko.github.io/chitka/account/task-complete.html)
